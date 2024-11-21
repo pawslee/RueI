@@ -27,6 +27,22 @@ public class DynamicElement : Element, ISettableOptions
     }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="DynamicElement"/> class.
+    /// </summary>
+    /// <param name="position">The scaled position of the element, where 0 is the bottom of the screen and 1000 is the top.</param>
+    public DynamicElement(float position)
+        : base(position)
+    {
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="DynamicElement"/> class.
+    /// </summary>
+    public DynamicElement()
+    {
+    }
+
+    /// <summary>
     /// Gets or sets the options for this element.
     /// </summary>
     public new ElementOptions Options
@@ -38,8 +54,16 @@ public class DynamicElement : Element, ISettableOptions
     /// <summary>
     /// Gets or sets a method that returns the new content and is called every time the display is updated.
     /// </summary>
-    public GetContent ContentGetter { get; set; }
+    public GetContent? ContentGetter { get; set; }
 
     /// <inheritdoc/>
-    protected internal override ParsedData GetParsedData(DisplayCore core) => Parser.Parse(ContentGetter(core), Options);
+    protected internal override ParsedData GetParsedData(DisplayCore core)
+    {
+        if (ContentGetter == null)
+        {
+            return Parser.Parse(string.Empty, Options);
+        }
+
+        return Parser.Parse(ContentGetter(core), Options);
+    }
 }

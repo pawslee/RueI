@@ -30,11 +30,6 @@ public static class RueIMain
 
     private static bool isPatchesRegistered = false;
 
-    static RueIMain()
-    {
-        EnsureInit();
-    }
-
     /// <summary>
     /// Ensures that RueI is properly initialized.
     /// </summary>

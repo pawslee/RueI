@@ -22,11 +22,11 @@
 
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>../References/Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\CompileFiles\Assembly-CSharp-Publicized.dll</HintPath>
     </Reference>
-	  <Reference Include="PluginAPI">
-		  <HintPath>../References/PluginAPI.dll</HintPath>
-	  </Reference>
+    <Reference Include="PluginAPI">
+      <HintPath>..\..\CompileFiles\PluginAPI.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

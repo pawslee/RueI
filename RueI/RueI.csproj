@@ -51,29 +51,35 @@
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
-		<Reference Include="Assembly-CSharp">
-			<HintPath>../References/Assembly-CSharp.dll</HintPath>
-		</Reference>
 		<Reference Include="Assembly-CSharp-firstpass">
-			<HintPath>../References/Assembly-CSharp-firstpass.dll</HintPath>
+		  <HintPath>..\..\CompileFiles\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+		  <HintPath>..\..\CompileFiles\Assembly-CSharp-Publicized.dll</HintPath>
+		</Reference>
+		<Reference Include="CommandSystem.Core">
+		  <HintPath>..\..\CompileFiles\CommandSystem.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Exiled.API">
+		  <HintPath>..\..\CompileFiles\Exiled.API.dll</HintPath>
 		</Reference>
 		<Reference Include="Mirror">
-			<HintPath>../References/Mirror.dll</HintPath>
+		  <HintPath>..\..\CompileFiles\Mirror.dll</HintPath>
 		</Reference>
 		<Reference Include="NorthwoodLib">
-			<HintPath>../References/NorthwoodLib.dll</HintPath>
+		  <HintPath>..\..\CompileFiles\NorthwoodLib.dll</HintPath>
 		</Reference>
 		<Reference Include="PluginAPI">
-			<HintPath>../References/PluginAPI.dll</HintPath>
+		  <HintPath>..\..\CompileFiles\PluginAPI.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine">
-			<HintPath>../References/UnityEngine.dll</HintPath>
+		  <HintPath>..\..\CompileFiles\UnityEngine.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.CoreModule">
-			<HintPath>../References/UnityEngine.CoreModule.dll</HintPath>
+		  <HintPath>..\..\CompileFiles\UnityEngine.CoreModule.dll</HintPath>
 		</Reference>
-		<Reference Include="System.Collections.Immutable">
-			<HintPath>../References/System.Collections.Immutable.dll</HintPath>
+		<Reference Include="UnityEngine.PhysicsModule">
+		  <HintPath>..\..\CompileFiles\UnityEngine.PhysicsModule.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 	<ItemGroup>
