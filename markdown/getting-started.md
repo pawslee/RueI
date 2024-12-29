@@ -13,7 +13,7 @@ this guide will cover how to use RueI using the first option, as a normal hard d
 ### installing RueI
 to install RueI as a dependency, you'll want to add it through nuget. this depends on which code editor you're using, but you can also install it through the command line. the nuget package for RueI is available [here](https://www.nuget.org/packages/RueI). 
 
-after you've done that, make sure you put the RueI dll in your dependencies folder for the plugin manager you're using. you can get the latest release [here](https://github.com/Ruemena/RueI/releases/tag/v2.0.4).
+after you've done that, make sure you put the RueI dll in your dependencies folder for the plugin manager you're using. you can get the latest release [here](https://github.com/Ruemena/RueI/releases/latest).
 ### using RueI
 using RueI is pretty simple. you can import it using the `using` statement. make sure that in the method called when your plugin is loaded you call the [RueIMain.EnsureInit](../api/RueI.RueIMain.html?q=RueIMain#RueI_RueIMain_EnsureInit) function - this ensures everything is properly initialized for RueI.
 
