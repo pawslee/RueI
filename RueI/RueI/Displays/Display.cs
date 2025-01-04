@@ -29,10 +29,10 @@ public class Display : DisplayBase, IElementContainer
     }
 
     /// <summary>
-    /// Gets the elements of this display.
+    /// Gets or sets the elements of this display.
     /// </summary>
-    public List<Element> Elements { get; } = new();
+    public List<Element> Elements { get; set; } = new();
 
-    /// <inheritdoc/>
+    /// <inheritdoc/>1
     public override IEnumerable<Element> GetAllElements() => Elements.FilterDisabled();
 }
