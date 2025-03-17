@@ -3,7 +3,7 @@
 
 RueI is a hint framework, designed to be the definitive way to display multiple hints at once. you can get the latest release [here](https://github.com/Ruemena/RueI/releases/latest).
 
-docs are available [here](https://lolalollipop.github.io/RueI/).
+docs are available [here](https://pawslee.github.io/RueI/).
 
 if you want to develop using RueI, make sure you install the [nuget package](https://www.nuget.org/packages/RueI)
 
