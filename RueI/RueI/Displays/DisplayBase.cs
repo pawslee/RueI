@@ -32,7 +32,7 @@ public abstract class DisplayBase
     }
 
     /// <summary>
-    /// Gets a value indicating whether or not this display is active.
+    /// Gets a value indicating whether this display is active.
     /// </summary>
     public bool IsActive { get; private set; } = true;
 
@@ -47,7 +47,7 @@ public abstract class DisplayBase
     public DisplayCore Coordinator { get; }
 
     /// <summary>
-    /// Gets all of the elements of this display.
+    /// Gets all the elements of this display.
     /// </summary>
     /// <returns>The <see cref="IEnumerator{IElement}"/> of elements.</returns>
     public abstract IEnumerable<Element> GetAllElements();

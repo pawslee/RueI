@@ -63,7 +63,7 @@ public class RateLimiter
     /// <summary>
     /// Tries to consume a token from this ratelimiter.
     /// </summary>
-    /// <returns>A value indicating whether or not this <see cref="RateLimiter"/> has a token available.</returns>
+    /// <returns>A value indicating whether this <see cref="RateLimiter"/> has a token available.</returns>
     public bool TryConsume()
     {
         CalculateNewTokens();

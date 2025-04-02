@@ -134,47 +134,47 @@ public enum Roles
     Scp3114 = 1 << RoleTypeId.Scp3114,
 
     /// <summary>
-    /// Gets all of the NTF role ids, including Facility Guards.
+    /// Gets all the NTF role ids, including Facility Guards.
     /// </summary>
     NtfRoles = NtfPrivate | NtfSergeant | NtfSpecialist | NtfCaptain | FacilityGuard,
 
     /// <summary>
-    /// Gets all of the Chaos role ids.
+    /// Gets all the Chaos role ids.
     /// </summary>
     ChaosRoles = ChaosRifleman | ChaosConscript | ChaosMarauder | ChaosRepressor,
 
     /// <summary>
-    /// Gets all of the military role ids.
+    /// Gets all the military role ids.
     /// </summary>
     MilitaryRoles = NtfRoles | ChaosRoles | Tutorial,
 
     /// <summary>
-    /// Gets all of the civilian role ids.
+    /// Gets all the civilian role ids.
     /// </summary>
     CivilianRoles = ClassD | Scientist,
 
     /// <summary>
-    /// Gets all of the human role ids.
+    /// Gets all the human role ids.
     /// </summary>
     HumanRoles = MilitaryRoles | CivilianRoles,
 
     /// <summary>
-    /// Gets all of the SCP role ids, excluding SCP-049-2.
+    /// Gets all the SCP role ids, excluding SCP-049-2.
     /// </summary>
     ScpsNo0492 = Scp173 | Scp106 | Scp049 | Scp079 | Scp096 | Scp939 | Scp3114,
 
     /// <summary>
-    /// Gets all of the SCP role ids, including SCP-049-2.
+    /// Gets all the SCP role ids, including SCP-049-2.
     /// </summary>
     Scps = ScpsNo0492 | Scp0492,
 
     /// <summary>
-    /// Gets all of the role ids for roles considered to be alive.
+    /// Gets all the role ids for roles considered to be alive.
     /// </summary>
     Alive = Scps | HumanRoles,
 
     /// <summary>
-    /// Gets all of the role ids for roles considered to be dead.
+    /// Gets all the role ids for roles considered to be dead.
     /// </summary>
     Dead = Spectator | Overwatch | Filmmaker,
 

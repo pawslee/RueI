@@ -20,7 +20,7 @@ public class Cooldown
     public TimeSpan TimeLeft => Length - stopwatch.Elapsed;
 
     /// <summary>
-    /// Gets a value indicating whether or not the cooldown is active.
+    /// Gets a value indicating whether the cooldown is active.
     /// </summary>
     public bool Active => stopwatch.Elapsed < Length;
 
@@ -38,7 +38,7 @@ public class Cooldown
     /// Starts the cooldown.
     /// </summary>
     /// <param name="length">In seconds, how long the cooldown should last.</param>
-    public void Start(float length) => this.Start(TimeSpan.FromSeconds(length));
+    public void Start(float length) => Start(TimeSpan.FromSeconds(length));
 
     /// <summary>
     /// Pauses the cooldown.
