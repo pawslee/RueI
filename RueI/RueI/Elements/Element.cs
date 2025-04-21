@@ -24,6 +24,13 @@ public abstract class Element
     }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="Element"/> class.
+    /// </summary>
+    public Element()
+    {
+    }
+
+    /// <summary>
     /// Gets or sets a value indicating whether or not this element is enabled and will show.
     /// </summary>
     public bool Enabled { get; set; } = true;
