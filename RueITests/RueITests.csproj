@@ -21,12 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>../References/Assembly-CSharp.dll</HintPath>
-    </Reference>
-	  <Reference Include="PluginAPI">
-		  <HintPath>../References/PluginAPI.dll</HintPath>
-	  </Reference>
+      <Reference Include="Assembly-CSharp"><HintPath>$(SL_REFERENCES)/Assembly-CSharp.dll</HintPath></Reference>
+      <Reference Include="PluginAPI"><HintPath>$(SL_REFERENCES)/LabAPI.dll</HintPath></Reference>
   </ItemGroup>
 
 </Project>

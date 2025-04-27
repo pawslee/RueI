@@ -24,12 +24,9 @@ public class TestGeneral
         }
 
         MethodInfo init = assembly.GetType(RUEIMAIN).GetMethod(ENSUREINIT);
-        if (init == null)
-        {
-            Assert.Fail();
-        }
+        Assert.IsNotNull(init);
 
-        init?.Invoke(null, new object[] { });
+        init.Invoke(null, new object[] { });
     }
 
     [TestMethod]
