@@ -53,7 +53,7 @@ public record struct MeasurementInfo(float value, MeasurementUnit style)
                     paramBuffer.Append('.');
                 }
             }
-            else if (char.IsDigit(ch))
+            else if (char.IsDigit(ch) || ch == '-')
             {
                 paramBuffer.Append(ch);
             }
