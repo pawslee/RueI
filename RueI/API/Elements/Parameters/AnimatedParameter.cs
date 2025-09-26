@@ -64,6 +64,18 @@ public class AnimatedParameter : FormattableParameter
     }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="AnimatedParameter"/> class
+    /// with the option to round the value to an <see langword="int"/>.
+    /// </summary>
+    /// <param name="value">The <see cref="AnimatedValue"/> to use.</param>
+    /// <param name="roundToInt">Whether to round the value to an <see langword="int"/>.</param>
+    public AnimatedParameter(AnimatedValue value, bool roundToInt)
+        : this(value)
+    {
+        this.RoundToInt = roundToInt;
+    }
+
+    /// <summary>
     /// Gets a value indicating whether the float should be rounded to an <see langword="int"/>.
     /// </summary>
     public bool RoundToInt { get; } // corresponds to "integral"

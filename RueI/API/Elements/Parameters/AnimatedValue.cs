@@ -4,13 +4,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-
 using Mirror;
 
 using RueI.Utils.Collections;
 
 using UnityEngine;
-
 using NetworkKeyframe = global::Utils.Networking.AnimationCurveReaderWriter.NetworkKeyframe;
 
 /// <summary>
@@ -22,6 +20,7 @@ using NetworkKeyframe = global::Utils.Networking.AnimationCurveReaderWriter.Netw
 /// </remarks>
 public readonly struct AnimatedValue : IEnumerable<Keyframe>
 {
+    // TODO: add easier operations
     private readonly List<NetworkKeyframe> frames;
 
     /// <summary>
@@ -42,6 +41,11 @@ public readonly struct AnimatedValue : IEnumerable<Keyframe>
             throw new ArgumentException("Argument has too many keyframes (max: 257)", nameof(curve));
         }
 
+        if (length < 2)
+        {
+            throw new ArgumentException("Argument needs at least 2 keyframes: ", nameof(curve));
+        }
+
         this.frames = new(length);
 
         for (int i = 0; i < length; i++)
@@ -60,7 +64,12 @@ public readonly struct AnimatedValue : IEnumerable<Keyframe>
 
         if (this.frames.Count > 257)
         {
-            throw new ArgumentException("Argument has too many keyframes (max: 257)", nameof(frames));
+            throw new ArgumentException("Argument has too many keyframes (max: 257):", nameof(frames));
+        }
+
+        if (this.frames.Count < 2)
+        {
+            throw new ArgumentException("Argument needs at least 2 keyframes: ", nameof(frames));
         }
     }
 
@@ -73,6 +82,11 @@ public readonly struct AnimatedValue : IEnumerable<Keyframe>
         if (frames.Length > 257)
         {
             throw new ArgumentException("Argument has too many keyframes (max: 257)", nameof(frames));
+        }
+
+        if (frames.Length < 2)
+        {
+            throw new ArgumentException("Argument needs at least 2 keyframes: ", nameof(frames));
         }
 
         this.frames = new(frames.Length);

@@ -1,6 +1,7 @@
 ﻿namespace RueI.API.Parsing.Modifications;
 
 using System;
+
 using RueI.API.Parsing;
 using RueI.Utils.Extensions;
 

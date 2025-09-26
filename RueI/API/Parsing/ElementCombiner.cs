@@ -2,6 +2,9 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using System.Threading;
 using global::Utils.Networking;
 using Hints;
 using LabApi.Features.Console;
@@ -165,8 +168,6 @@ internal static class ElementCombiner
 
             contentWithParameterWriter.WriteNetworkWriter(offsetWriter, false);
 
-            CumulativeOffset.WriteAsLineHeight(contentWithParameterWriter, ParameterHandler, Nobreaks);
-
             int pos = 0;
             int i = 0;
 
@@ -185,7 +186,9 @@ internal static class ElementCombiner
                     // otherwise, just write it as usual
                     if (maxWritable < MaxStringLength)
                     {
-                        ParameterHandler.AddStringParameter(contentWriter.buffer.AsSpan(pos, maxWritable));
+                        int subIndex = ParameterHandler.AddStringParameter(contentWriter.buffer.AsSpan(pos, maxWritable));
+
+                        contentWithParameterWriter.WriteFormatItem(subIndex);
 
                         // write the text that we can't break during
                         contentWithParameterWriter.WriteBytes(contentWriter.buffer.AsSpan(start, nobreak.Length), false);
@@ -199,7 +202,8 @@ internal static class ElementCombiner
 
                 int cap = Math.Min(length - pos, MaxStringLength);
 
-                ParameterHandler.AddStringParameter(contentWriter.buffer.AsSpan(pos, cap));
+                int index = ParameterHandler.AddStringParameter(contentWriter.buffer.AsSpan(pos, cap));
+                contentWithParameterWriter.WriteFormatItem(index);
 
                 pos += cap;
             }
@@ -219,9 +223,14 @@ internal static class ElementCombiner
         }
 
 #if DEBUG
-        string offset = new(Encoding.UTF8.GetChars(offsetWriter.buffer, 0, offsetWriter.Position));
-        string content = new(Encoding.UTF8.GetChars(contentWriter.buffer, 0, contentWriter.Position));
-        LabApi.Features.Console.Logger.Debug($"Text: {offset + content}");
+        if (contentWriter.Position < 2000)
+        {
+            string offset = new(Encoding.UTF8.GetChars(offsetWriter.buffer, 0, offsetWriter.Position));
+            string content = new(Encoding.UTF8.GetChars(contentWriter.buffer, 0, contentWriter.Position));
+
+            LabApi.Features.Console.Logger.Debug($"Text: {offset + content}");
+        }
+
 #endif
 
         hub.networkIdentity.connectionToClient.Send(totalWriter.ToArraySegment());
@@ -235,11 +244,11 @@ internal static class ElementCombiner
         SubOffset.Clear();
 
         SubOffset.Add(hintOneTotalLines);
-        SubOffset.Multiply(2);
+        SubOffset.Multiply(2f);
         SubOffset.Add(hintOnePos);
         SubOffset.Subtract(hintTwoPos);
 
-        SubOffset.Divide(-2);
+        SubOffset.Divide(-2f);
     }
 
     private static ReadOnlySpan<T> SplitUntil<T>(scoped ref ReadOnlySpan<T> span, int position)

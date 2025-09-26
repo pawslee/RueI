@@ -177,13 +177,15 @@ internal static class NetworkWriterExtensions
     /// <param name="writeSize">Whether or not to write the size.</param>
     internal static void WriteBytes(this NetworkWriter writer, ReadOnlySpan<byte> bytes, bool writeSize)
     {
-        writer.EnsureLength(bytes.Length);
-
         if (writeSize)
         {
-            writer.EnsureLength(sizeof(ushort));
+            writer.EnsureLength(bytes.Length + sizeof(ushort));
 
             writer.WriteUShort((ushort)(bytes.Length + 1));
+        }
+        else
+        {
+            writer.EnsureLength(bytes.Length);
         }
 
         bytes.CopyTo(writer.BufferSpan());

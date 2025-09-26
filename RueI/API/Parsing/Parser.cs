@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Runtime.CompilerServices;
-
+using LabApi.Features.Console;
 using RueI.API.Elements;
 using RueI.API.Elements.Parameters;
 using RueI.API.Parsing.Enums;
@@ -137,7 +137,7 @@ internal static class Parser
 
     private static void HandleChar(char ch)
     {
-        if (TryParseFormatItem(out int _))
+        if (TryParseFormatItem(true, out int _))
         {
             return;
         }
@@ -217,7 +217,7 @@ internal static class Parser
                                 {
                                     goto case '>';
                                 }
-                                else if (text[position] == '<' || TryParseFormatItem(out int _))
+                                else if (text[position] == '<' || TryParseFormatItem(true, out int _))
                                 {
                                     BreakTag();
 
@@ -362,7 +362,7 @@ internal static class Parser
     /// If <see langword="false"/>, there is no format item. If <see langword="true"/>, <paramref name="num"/> is either
     /// the ID of the format item or <c>-1</c>, indicating that two characters were processed.
     /// </remarks>
-    private static bool TryParseFormatItem(out int num)
+    private static bool TryParseFormatItem(bool addItem, out int num)
     {
         // TODO: make sure this works with lastPosition
         // because format items are not handled by TMP, we get the raw character
@@ -428,14 +428,21 @@ internal static class Parser
                     {
                         if (result >= currentParameters.Count)
                         {
-                            Modifications.Add(new InvalidFormatItemModification(start - 1, length + 2)); // TODO: check for potential off by one errors
+                            if (addItem)
+                            {
+                                Modifications.Add(new InvalidFormatItemModification(start - 1, length + 2)); // TODO: check for potential off by one errors
+                            }
 
                             // doesn't really matter what we do here
                             Unsafe.SkipInit(out num);
                             return false;
                         }
 
-                        Modifications.Add(new FormatItemModification(start - 1, length + 2, result)); // TODO: check for potential off by one errors
+                        if (addItem)
+                        {
+                            Modifications.Add(new FormatItemModification(start - 1, length + 2, result)); // TODO: check for potential off by one errors
+                        }
+
                         num = result;
 
                         return true;
@@ -564,9 +571,9 @@ internal static class Parser
 
                     return true;
                 default:
-                    if (TryParseFormatItem(out int num))
+                    if (TryParseFormatItem(false, out int num))
                     {
-                        goto EndLoop; // TODO: add support for format items
+                        goto EndLoop; // TODO: add support for this
 
 #pragma warning disable CS0162 // Unreachable code detected
                         if (num == -1) // escape sequence, e.g. {{ -> add additional
@@ -757,16 +764,14 @@ internal static class Parser
 
     private static void BreakTag()
     {
-        int pos = lastPosition + 1;
-
         if (noparse)
         {
-            Modifications.Add(new CloseNoparseModification(pos));
-            Modifications.Add(new NoparseModification(pos));
+            Modifications.Add(new CloseNoparseModification(lastPosition));
+            Modifications.Add(new NoparseModification(lastPosition));
         }
         else
         {
-            Modifications.Add(new CloseNoparseModification(pos));
+            Modifications.Add(new CloseNoparseModification(lastPosition));
         }
     }
 

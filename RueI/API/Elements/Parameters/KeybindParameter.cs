@@ -34,7 +34,7 @@ public class KeybindParameter : FormattableParameter
     /// <inheritdoc/>
     internal override void Write(NetworkWriter writer)
     {
-        writer.WriteString(this.Format);
         writer.WriteInt(this.Id);
+        writer.WriteString(this.Format);
     }
 }
