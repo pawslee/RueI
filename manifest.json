@@ -422,6 +422,29 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "markdown/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "markdown/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "markdown/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "markdown/toc.html"
+        },
+        ".json": {
+          "relative_path": "markdown/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
