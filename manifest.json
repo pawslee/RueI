@@ -22,1907 +22,381 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Constants.yml",
+      "source_relative_path": "api/RueI.API.Elements.BasicElement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Constants.html"
+          "relative_path": "api/RueI.API.Elements.BasicElement.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Constants",
-      "Summary": "<p sourcefile=\"api/RueI.Constants.yml\" sourcestartlinenumber=\"1\">Provides a variety of constant values.</p>\n"
+      "Title": "RueI.API.Elements.BasicElement",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.BasicElement.yml\" sourcestartlinenumber=\"1\">Represents a basic element with fixed text.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.AutoElement.PeriodicUpdate.yml",
+      "source_relative_path": "api/RueI.API.Elements.DynamicElement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.AutoElement.PeriodicUpdate.html"
+          "relative_path": "api/RueI.API.Elements.DynamicElement.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.AutoElement.PeriodicUpdate",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.AutoElement.PeriodicUpdate.yml\" sourcestartlinenumber=\"1\">Represents a periodic update for an <xref href=\"RueI.Displays.AutoElement\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Title": "RueI.API.Elements.DynamicElement",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.DynamicElement.yml\" sourcestartlinenumber=\"1\">Represents an element that obtains its text from a supplied function and regenerates when a display is updated.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.AutoElement.yml",
+      "source_relative_path": "api/RueI.API.Elements.Element.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.AutoElement.html"
+          "relative_path": "api/RueI.API.Elements.Element.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.AutoElement",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.AutoElement.yml\" sourcestartlinenumber=\"1\">Manages and automatically assigns <xref href=\"RueI.Elements.Element\" data-throw-if-not-resolved=\"false\"></xref> instances to any <xref href=\"RueI.Displays.DisplayCore\" data-throw-if-not-resolved=\"false\"></xref> meeting a criteria.</p>\n"
+      "Title": "RueI.API.Elements.Element",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Element.yml\" sourcestartlinenumber=\"1\">Represents text within a Display.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Display.yml",
+      "source_relative_path": "api/RueI.API.Elements.Enums.NoparseSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Display.html"
+          "relative_path": "api/RueI.API.Elements.Enums.NoparseSettings.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Display",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Display.yml\" sourcestartlinenumber=\"1\">Represents a basic display attached to a <xref href=\"RueI.Displays.DisplayCore\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Title": "RueI.API.Elements.Enums.NoparseSettings",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Enums.NoparseSettings.yml\" sourcestartlinenumber=\"1\">Defines the behavior of noparse tags in <xref href=\"RueI.API.Elements.Element\" data-throw-if-not-resolved=\"false\"></xref> text.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.DisplayBase.yml",
+      "source_relative_path": "api/RueI.API.Elements.Enums.VerticalAlign.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.DisplayBase.html"
+          "relative_path": "api/RueI.API.Elements.Enums.VerticalAlign.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.DisplayBase",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.DisplayBase.yml\" sourcestartlinenumber=\"1\">Defines the base class for all displays.</p>\n"
+      "Title": "RueI.API.Elements.Enums.VerticalAlign",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Enums.VerticalAlign.yml\" sourcestartlinenumber=\"1\">Specifies how an element should be aligned vertically when there are multiple lines.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.DisplayCore.yml",
+      "source_relative_path": "api/RueI.API.Elements.Enums.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.DisplayCore.html"
+          "relative_path": "api/RueI.API.Elements.Enums.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.DisplayCore",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.DisplayCore.yml\" sourcestartlinenumber=\"1\">Manages all of the <xref href=\"RueI.Displays.DisplayBase\" data-throw-if-not-resolved=\"false\"></xref>s for a ReferenceHub.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.ElemCombiner.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Displays.ElemCombiner.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Displays.ElemCombiner",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.ElemCombiner.yml\" sourcestartlinenumber=\"1\">Provides a means of combining <xref href=\"RueI.Elements.Element\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.IElemReference-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Displays.IElemReference-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Displays.IElemReference<T>",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.IElemReference-1.yml\" sourcestartlinenumber=\"1\">Represents a reference to an element present within any number of player's displays.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Interfaces.IElementContainer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Displays.Interfaces.IElementContainer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Displays.Interfaces.IElementContainer",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Interfaces.IElementContainer.yml\" sourcestartlinenumber=\"1\">Defines a container for multiple elements.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Interfaces.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Displays.Interfaces.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Displays.Interfaces",
+      "Title": "RueI.API.Elements.Enums",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Roles.yml",
+      "source_relative_path": "api/RueI.API.Elements.Parameters.AnimatedParameter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Roles.html"
+          "relative_path": "api/RueI.API.Elements.Parameters.AnimatedParameter.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Roles",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Roles.yml\" sourcestartlinenumber=\"1\">Provides a means for describing multiple RoleTypeIds.</p>\n"
+      "Title": "RueI.API.Elements.Parameters.AnimatedParameter",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Parameters.AnimatedParameter.yml\" sourcestartlinenumber=\"1\">Represents a parameter for a value that changes over time.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Scheduling.Cooldown.yml",
+      "source_relative_path": "api/RueI.API.Elements.Parameters.AnimatedValue.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Scheduling.Cooldown.html"
+          "relative_path": "api/RueI.API.Elements.Parameters.AnimatedValue.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Scheduling.Cooldown",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Scheduling.Cooldown.yml\" sourcestartlinenumber=\"1\">Provides a way to implement a cooldown easily.</p>\n"
+      "Title": "RueI.API.Elements.Parameters.AnimatedValue",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Parameters.AnimatedValue.yml\" sourcestartlinenumber=\"1\">Represents an animated value.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Scheduling.JobToken.yml",
+      "source_relative_path": "api/RueI.API.Elements.Parameters.ContentParameter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Scheduling.JobToken.html"
+          "relative_path": "api/RueI.API.Elements.Parameters.ContentParameter.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Scheduling.JobToken",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Scheduling.JobToken.yml\" sourcestartlinenumber=\"1\">Represents a reference to any number of <xref href=\"RueI.Displays.Scheduling.ScheduledJob\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Title": "RueI.API.Elements.Parameters.ContentParameter",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Parameters.ContentParameter.yml\" sourcestartlinenumber=\"1\">Represents a parameter for an <xref href=\"RueI.API.Elements.Element\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Scheduling.RateLimiter.yml",
+      "source_relative_path": "api/RueI.API.Elements.Parameters.FormattableParameter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Scheduling.RateLimiter.html"
+          "relative_path": "api/RueI.API.Elements.Parameters.FormattableParameter.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Scheduling.RateLimiter",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Scheduling.RateLimiter.yml\" sourcestartlinenumber=\"1\">Provides a way to ratelimit actions or detect ratelimits.</p>\n"
+      "Title": "RueI.API.Elements.Parameters.FormattableParameter",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Parameters.FormattableParameter.yml\" sourcestartlinenumber=\"1\">Represents a parameter that can be formatted.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Scheduling.ScheduledJob.yml",
+      "source_relative_path": "api/RueI.API.Elements.Parameters.ItemParameter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Scheduling.ScheduledJob.html"
+          "relative_path": "api/RueI.API.Elements.Parameters.ItemParameter.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Scheduling.ScheduledJob",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Scheduling.ScheduledJob.yml\" sourcestartlinenumber=\"1\">Defines a scheduled job for a <xref href=\"RueI.Displays.Scheduling.Scheduler\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Title": "RueI.API.Elements.Parameters.ItemParameter",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Parameters.ItemParameter.yml\" sourcestartlinenumber=\"1\">Represents a parameter that is replaced by the name of an item.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Scheduling.Scheduler.yml",
+      "source_relative_path": "api/RueI.API.Elements.Parameters.KeybindParameter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Scheduling.Scheduler.html"
+          "relative_path": "api/RueI.API.Elements.Parameters.KeybindParameter.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Scheduling.Scheduler",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Scheduling.Scheduler.yml\" sourcestartlinenumber=\"1\">Provides a means of doing batch operations.</p>\n"
+      "Title": "RueI.API.Elements.Parameters.KeybindParameter",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Parameters.KeybindParameter.yml\" sourcestartlinenumber=\"1\">Represents a parameter that is replaced with a keybind.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Scheduling.TimedElemRef-1.yml",
+      "source_relative_path": "api/RueI.API.Elements.Parameters.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Scheduling.TimedElemRef-1.html"
+          "relative_path": "api/RueI.API.Elements.Parameters.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Scheduling.TimedElemRef<T>",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Scheduling.TimedElemRef-1.yml\" sourcestartlinenumber=\"1\">Represents a <xref href=\"RueI.Displays.IElemReference%601\" data-throw-if-not-resolved=\"false\"></xref> with an associated <xref href=\"RueI.Displays.Scheduling.JobToken\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Scheduling.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Displays.Scheduling.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Displays.Scheduling",
+      "Title": "RueI.API.Elements.Parameters",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.Screen.yml",
+      "source_relative_path": "api/RueI.API.Elements.Tag.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.Screen.html"
+          "relative_path": "api/RueI.API.Elements.Tag.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.Screen",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.Screen.yml\" sourcestartlinenumber=\"1\">Represents a <xref href=\"RueI.Displays.Interfaces.IElementContainer\" data-throw-if-not-resolved=\"false\"></xref> inside a <xref href=\"RueI.Displays.ScreenDisplay\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Title": "RueI.API.Elements.Tag",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.Tag.yml\" sourcestartlinenumber=\"1\">Represents a unique identifier for an element within a <xref href=\"RueI.API.RueDisplay\" data-throw-if-not-resolved=\"false\"></xref>. This class\ncannot be inherited.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.ScreenDisplay.yml",
+      "source_relative_path": "api/RueI.API.Elements.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Displays.ScreenDisplay.html"
+          "relative_path": "api/RueI.API.Elements.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Displays.ScreenDisplay",
-      "Summary": "<p sourcefile=\"api/RueI.Displays.ScreenDisplay.yml\" sourcestartlinenumber=\"1\">Represents a display attached to a <xref href=\"RueI.Displays.DisplayCore\" data-throw-if-not-resolved=\"false\"></xref> with support for <xref href=\"RueI.Displays.Screen\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Displays.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Displays.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Displays",
+      "Title": "RueI.API.Elements",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.Delegates.GetContent.yml",
+      "source_relative_path": "api/RueI.API.Parsing.ParsedData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.Delegates.GetContent.html"
+          "relative_path": "api/RueI.API.Parsing.ParsedData.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.Delegates.GetContent",
-      "Summary": "<p sourcefile=\"api/RueI.Elements.Delegates.GetContent.yml\" sourcestartlinenumber=\"1\">Defines a method used to get content for an element.</p>\n"
+      "Title": "RueI.API.Parsing.ParsedData",
+      "Summary": "<p sourcefile=\"api/RueI.API.Parsing.ParsedData.yml\" sourcestartlinenumber=\"1\">Represents a parsed string, used for combining elements.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.Delegates.yml",
+      "source_relative_path": "api/RueI.API.Parsing.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.Delegates.html"
+          "relative_path": "api/RueI.API.Parsing.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.Delegates",
+      "Title": "RueI.API.Parsing",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.DynamicElement.yml",
+      "source_relative_path": "api/RueI.API.RueDisplay.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.DynamicElement.html"
+          "relative_path": "api/RueI.API.RueDisplay.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.DynamicElement",
-      "Summary": "<p sourcefile=\"api/RueI.Elements.DynamicElement.yml\" sourcestartlinenumber=\"1\">Represents a non-cached element that evaluates and parses a function when getting its content.</p>\n"
+      "Title": "RueI.API.RueDisplay",
+      "Summary": "<p sourcefile=\"api/RueI.API.RueDisplay.yml\" sourcestartlinenumber=\"1\">Represents a display for a specific player.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.Element.yml",
+      "source_relative_path": "api/RueI.API.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.Element.html"
+          "relative_path": "api/RueI.API.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.Element",
-      "Summary": "<p sourcefile=\"api/RueI.Elements.Element.yml\" sourcestartlinenumber=\"1\">Represents the base class for all elements, which are individual 'hints' present within an arbitrary number of <xref href=\"RueI.Displays.Display\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.Enums.ElementOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Elements.Enums.ElementOptions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Elements.Enums.ElementOptions",
-      "Summary": "<p sourcefile=\"api/RueI.Elements.Enums.ElementOptions.yml\" sourcestartlinenumber=\"1\">Provides options for elements.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.Enums.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Elements.Enums.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Elements.Enums",
+      "Title": "RueI.API",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.FixedElement.yml",
+      "source_relative_path": "api/RueI.Utils.Enums.AlignStyle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.FixedElement.html"
+          "relative_path": "api/RueI.Utils.Enums.AlignStyle.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.FixedElement",
-      "Summary": "<p sourcefile=\"api/RueI.Elements.FixedElement.yml\" sourcestartlinenumber=\"1\">Represents a cached element with a fixed content.</p>\n"
+      "Title": "RueI.Utils.Enums.AlignStyle",
+      "Summary": "<p sourcefile=\"api/RueI.Utils.Enums.AlignStyle.yml\" sourcestartlinenumber=\"1\">Represents all of the options for the alignment of a string of text.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.Interfaces.ISettable.yml",
+      "source_relative_path": "api/RueI.Utils.Enums.CaseStyle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.Interfaces.ISettable.html"
+          "relative_path": "api/RueI.Utils.Enums.CaseStyle.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.Interfaces.ISettable",
-      "Summary": "<p sourcefile=\"api/RueI.Elements.Interfaces.ISettable.yml\" sourcestartlinenumber=\"1\">Defines an <xref href=\"RueI.Elements.Element\" data-throw-if-not-resolved=\"false\"></xref> that can be set.</p>\n"
+      "Title": "RueI.Utils.Enums.CaseStyle",
+      "Summary": "<p sourcefile=\"api/RueI.Utils.Enums.CaseStyle.yml\" sourcestartlinenumber=\"1\">Represents the case style of text.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.Interfaces.ISettableOptions.yml",
+      "source_relative_path": "api/RueI.Utils.Enums.MarginDirection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.Interfaces.ISettableOptions.html"
+          "relative_path": "api/RueI.Utils.Enums.MarginDirection.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.Interfaces.ISettableOptions",
-      "Summary": "<p sourcefile=\"api/RueI.Elements.Interfaces.ISettableOptions.yml\" sourcestartlinenumber=\"1\">Defines an <xref href=\"RueI.Elements.Element\" data-throw-if-not-resolved=\"false\"></xref> with options that can be set.</p>\n"
+      "Title": "RueI.Utils.Enums.MarginDirection",
+      "Summary": "<p sourcefile=\"api/RueI.Utils.Enums.MarginDirection.yml\" sourcestartlinenumber=\"1\">Represents the direction to add margins.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.Interfaces.yml",
+      "source_relative_path": "api/RueI.Utils.Enums.MeasurementUnit.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.Interfaces.html"
+          "relative_path": "api/RueI.Utils.Enums.MeasurementUnit.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.Interfaces",
+      "Title": "RueI.Utils.Enums.MeasurementUnit",
+      "Summary": "<p sourcefile=\"api/RueI.Utils.Enums.MeasurementUnit.yml\" sourcestartlinenumber=\"1\">Represents the unit used for a measurement parameter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RueI.Utils.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RueI.Utils.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RueI.Utils.Enums",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.SetElement.yml",
+      "source_relative_path": "api/RueI.Utils.HintBuilding.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.SetElement.html"
+          "relative_path": "api/RueI.Utils.HintBuilding.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements.SetElement",
-      "Summary": "<p sourcefile=\"api/RueI.Elements.SetElement.yml\" sourcestartlinenumber=\"1\">Represents a simple cached element with settable content.</p>\n"
+      "Title": "RueI.Utils.HintBuilding",
+      "Summary": "<p sourcefile=\"api/RueI.Utils.HintBuilding.yml\" sourcestartlinenumber=\"1\">Provides extensions for adding rich text tags to <xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Elements.yml",
+      "source_relative_path": "api/RueI.Utils.PositionUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/RueI.Elements.html"
+          "relative_path": "api/RueI.Utils.PositionUtils.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "RueI.Elements",
+      "Title": "RueI.Utils.PositionUtils",
+      "Summary": "<p sourcefile=\"api/RueI.Utils.PositionUtils.yml\" sourcestartlinenumber=\"1\">Provides utilities for working with <xref href=\"RueI.API.Elements.Element\" data-throw-if-not-resolved=\"false\"></xref> positions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RueI.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RueI.Utils.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RueI.Utils",
       "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Events.DisplayUpdatedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Events.DisplayUpdatedEventArgs.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Events.DisplayUpdatedEventArgs",
-      "Summary": "<p sourcefile=\"api/RueI.Events.DisplayUpdatedEventArgs.yml\" sourcestartlinenumber=\"1\">Contains all information after a player's <xref href=\"RueI.Displays.DisplayCore\" data-throw-if-not-resolved=\"false\"></xref> is updated.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Events.Events.RueIEvent-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Events.Events.RueIEvent-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Events.Events.RueIEvent<T>",
-      "Summary": "<p sourcefile=\"api/RueI.Events.Events.RueIEvent-1.yml\" sourcestartlinenumber=\"1\">Represents a custom RueI event.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Events.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Events.Events.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Events.Events",
-      "Summary": "<p sourcefile=\"api/RueI.Events.Events.yml\" sourcestartlinenumber=\"1\">Provides events for use by plugins using RueI.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Events.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Events.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Events",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.DisplayCoreExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.DisplayCoreExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions.DisplayCoreExtensions",
-      "Summary": "<p sourcefile=\"api/RueI.Extensions.DisplayCoreExtensions.yml\" sourcestartlinenumber=\"1\">Provides miscellaneous utility for <xref href=\"RueI.Displays.DisplayCore\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.ElementHelpers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.ElementHelpers.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions.ElementHelpers",
-      "Summary": "<p sourcefile=\"api/RueI.Extensions.ElementHelpers.yml\" sourcestartlinenumber=\"1\">Provides extensions and helpers for working with elements.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.EnumExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.EnumExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions.EnumExtensions",
-      "Summary": "<p sourcefile=\"api/RueI.Extensions.EnumExtensions.yml\" sourcestartlinenumber=\"1\">Provides extensions for working with RueI <xref href=\"System.Enum\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.HintBuilding.HintBuilding.AlignStyle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.HintBuilding.HintBuilding.AlignStyle.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions.HintBuilding.HintBuilding.AlignStyle",
-      "Summary": "<p sourcefile=\"api/RueI.Extensions.HintBuilding.HintBuilding.AlignStyle.yml\" sourcestartlinenumber=\"1\">Represents all of the options for the alignment of a string of text.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.HintBuilding.HintBuilding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.HintBuilding.HintBuilding.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions.HintBuilding.HintBuilding",
-      "Summary": "<p sourcefile=\"api/RueI.Extensions.HintBuilding.HintBuilding.yml\" sourcestartlinenumber=\"1\">Provides extensions for adding rich text tags to <xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.HintBuilding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.HintBuilding.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions.HintBuilding",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.IEnumerableExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.IEnumerableExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions.IEnumerableExtensions",
-      "Summary": "<p sourcefile=\"api/RueI.Extensions.IEnumerableExtensions.yml\" sourcestartlinenumber=\"1\">Provides extensions for working with collections.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.ReflectionHelpers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.ReflectionHelpers.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions.ReflectionHelpers",
-      "Summary": "<p sourcefile=\"api/RueI.Extensions.ReflectionHelpers.yml\" sourcestartlinenumber=\"1\">Contains methods designed for use by reflection.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Extensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Extensions",
-      "Summary": "\n<p sourcefile=\"markdown/namespaces/RueI.Extensions.md\" sourcestartlinenumber=\"5\"><a href=\"./RueI.Extensions.html\" sourcefile=\"markdown/namespaces/RueI.Extensions.md\" sourcestartlinenumber=\"5\">RueI.Extensions</a> contains extensions and helpers for working with hints and RueI as a whole. This namespace also contains various extensions that are used internally by RueI.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.NonUnityProvider.TaskAsyncOperation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.NonUnityProvider.TaskAsyncOperation.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.NonUnityProvider.TaskAsyncOperation",
-      "Summary": "<p sourcefile=\"api/RueI.NonUnityProvider.TaskAsyncOperation.yml\" sourcestartlinenumber=\"1\">Represents an async operation using a <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.NonUnityProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.NonUnityProvider.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.NonUnityProvider",
-      "Summary": "<p sourcefile=\"api/RueI.NonUnityProvider.yml\" sourcestartlinenumber=\"1\">Provides non-Unity alternatives for the <xref href=\"RueI.UnityProvider\" data-throw-if-not-resolved=\"false\"></xref> of the application.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.CharacterLengths.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.CharacterLengths.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.CharacterLengths",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.CharacterLengths.yml\" sourcestartlinenumber=\"1\">Provides lengths for characters in hints.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.ClosingTag-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.ClosingTag-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.ClosingTag<T>",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.ClosingTag-1.yml\" sourcestartlinenumber=\"1\">Defines the base class for all rich text tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Enums.CaseStyle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Enums.CaseStyle.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Enums.CaseStyle",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Enums.CaseStyle.yml\" sourcestartlinenumber=\"1\">Represents the case style of the parser.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Enums.ColorStyle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Enums.ColorStyle.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Enums.ColorStyle",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Enums.ColorStyle.yml\" sourcestartlinenumber=\"1\">Represents the style used for a color parameter.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Enums.MeasurementUnit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Enums.MeasurementUnit.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Enums.MeasurementUnit",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Enums.MeasurementUnit.yml\" sourcestartlinenumber=\"1\">Represents the unit used for a measurement parameter.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Enums.TagStyle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Enums.TagStyle.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Enums.TagStyle",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Enums.TagStyle.yml\" sourcestartlinenumber=\"1\">Represents the valid characters for a delimiter.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Enums.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Enums.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Enums",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.NoParamsTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.NoParamsTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.NoParamsTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.NoParamsTag.yml\" sourcestartlinenumber=\"1\">Defines a <xref href=\"RueI.Parsing.RichTextTag\" data-throw-if-not-resolved=\"false\"></xref> that does not take in parameters.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Parser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Parser.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Parser",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Parser.yml\" sourcestartlinenumber=\"1\">Helps parse the content of elements. This class cannot be inherited.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.ParserBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.ParserBuilder.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.ParserBuilder",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.ParserBuilder.yml\" sourcestartlinenumber=\"1\">Builds <xref href=\"RueI.Parsing.Parser\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.ParserContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.ParserContext.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.ParserContext",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.ParserContext.yml\" sourcestartlinenumber=\"1\">Describes the state of a parser at a time.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Records.MeasurementInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Records.MeasurementInfo.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Records.MeasurementInfo",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Records.MeasurementInfo.yml\" sourcestartlinenumber=\"1\">Defines a record that contains information about measurement info.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Records.ParsedData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Records.ParsedData.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Records.ParsedData",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Records.ParsedData.yml\" sourcestartlinenumber=\"1\">Defines a class that contains parsed information about a single element, used for displaying multiple at a time.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Records.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Records.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Records",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.RichTextTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.RichTextTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.RichTextTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.RichTextTag.yml\" sourcestartlinenumber=\"1\">Defines the base class for all rich text tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.AlignTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.AlignTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.AlignTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.AlignTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle align tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.AllcapsTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.AllcapsTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.AllcapsTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.AllcapsTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle allcaps tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.AlphaTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.AlphaTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.AlphaTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.AlphaTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle alpha tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.BoldTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.BoldTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.BoldTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.BoldTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle bold tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.BrTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.BrTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.BrTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.BrTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle br tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CSpaceTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CSpaceTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CSpaceTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CSpaceTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle cspace tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseAlignTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseAlignTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseAlignTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseAlignTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing align tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseAllcapsTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseAllcapsTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseAllcapsTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseAllcapsTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing allcaps tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseAlphaTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseAlphaTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseAlphaTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseAlphaTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing alpha tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseBoldTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseBoldTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseBoldTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseBoldTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing bold tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseCSpaceTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseCSpaceTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseCSpaceTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseCSpaceTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing cspace tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseColorTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseColorTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseColorTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseColorTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing color tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseIndentTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseIndentTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseIndentTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseIndentTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing indent tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseItalicsTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseItalicsTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseItalicsTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseItalicsTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing italics tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseLineHeightTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseLineHeightTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseLineHeightTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseLineHeightTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing line height tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseLineIndentTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseLineIndentTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseLineIndentTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseLineIndentTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing line indent tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseLowercase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseLowercase.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseLowercase",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseLowercase.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing lowercase tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseMarginTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseMarginTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseMarginTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseMarginTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing indent tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseMarkTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseMarkTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseMarkTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseMarkTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing mark tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseNobrTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseNobrTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseNobrTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseNobrTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing nobr tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseNoparseTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseNoparseTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseNoparseTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseNoparseTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing noparse tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseRotateTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseRotateTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseRotateTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseRotateTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing rotate tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseScaleTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseScaleTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseScaleTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseScaleTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing scale tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseSizeTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseSizeTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseSizeTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseSizeTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing size tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseSmallcapsTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseSmallcapsTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseSmallcapsTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseSmallcapsTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing smallcaps tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseStrikethroughTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseStrikethroughTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseStrikethroughTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseStrikethroughTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing strikethrough tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseSubscriptTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseSubscriptTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseSubscriptTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseSubscriptTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing subscript tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseSuperscriptTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseSuperscriptTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseSuperscriptTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseSuperscriptTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing superscript tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseUnderlineTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseUnderlineTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseUnderlineTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseUnderlineTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing underline tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseVOffsetTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.CloseVOffsetTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.CloseVOffsetTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.CloseVOffsetTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle closing voffset tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.ColorTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.ColorTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.ColorTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.ColorTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle color tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.IndentTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.IndentTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.IndentTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.IndentTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle indent tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.ItalicsAngleTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.ItalicsAngleTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.ItalicsAngleTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.ItalicsAngleTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle italic angles tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.ItalicsTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.ItalicsTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.ItalicsTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.ItalicsTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle italics tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.LineHeightTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.LineHeightTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.LineHeightTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.LineHeightTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle line-height tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.LineIndentTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.LineIndentTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.LineIndentTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.LineIndentTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle line indent tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.LowercaseTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.LowercaseTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.LowercaseTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.LowercaseTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle lowercase tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.MarginLeft.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.MarginLeft.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.MarginLeft",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.MarginLeft.yml\" sourcestartlinenumber=\"1\">Provides a way to handle margin tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.MarginRight.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.MarginRight.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.MarginRight",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.MarginRight.yml\" sourcestartlinenumber=\"1\">Provides a way to handle margin tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.MarginTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.MarginTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.MarginTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.MarginTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle margin tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.MarkTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.MarkTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.MarkTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.MarkTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle mark tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.NobrTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.NobrTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.NobrTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.NobrTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle nobr tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.NoparseTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.NoparseTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.NoparseTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.NoparseTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle noparse tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.PageTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.PageTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.PageTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.PageTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle page tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.PosTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.PosTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.PosTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.PosTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle pos tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.RotateTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.RotateTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.RotateTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.RotateTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle rotate tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.ScaleTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.ScaleTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.ScaleTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.ScaleTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle scale tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SizeTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SizeTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.SizeTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.SizeTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle size tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SmallcapsTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SmallcapsTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.SmallcapsTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.SmallcapsTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle smallcaps tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SpaceTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SpaceTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.SpaceTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.SpaceTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle space tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.StrikethroughTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.StrikethroughTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.StrikethroughTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.StrikethroughTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle strikethrough tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SubscriptTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SubscriptTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.SubscriptTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.SubscriptTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle subscript tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SuperscriptTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.SuperscriptTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.SuperscriptTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.SuperscriptTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle superscript tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.UnderlineTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.UnderlineTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.UnderlineTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.UnderlineTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle underline tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.VOffsetTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.VOffsetTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags.VOffsetTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.ConcreteTags.VOffsetTag.yml\" sourcestartlinenumber=\"1\">Provides a way to handle voffset tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.ConcreteTags.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.ConcreteTags.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.ConcreteTags",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.MeasurementTag.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.MeasurementTag.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.MeasurementTag",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.MeasurementTag.yml\" sourcestartlinenumber=\"1\">Defines a <xref href=\"RueI.Parsing.RichTextTag\" data-throw-if-not-resolved=\"false\"></xref> that only takes in a measurement.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.RichTextTagAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.RichTextTagAttribute.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.RichTextTagAttribute",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.RichTextTagAttribute.yml\" sourcestartlinenumber=\"1\">Defines a <xref href=\"RueI.Parsing.RichTextTag\" data-throw-if-not-resolved=\"false\"></xref> for RueI.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.SharedTag-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.SharedTag-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.SharedTag<T>",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.SharedTag-1.yml\" sourcestartlinenumber=\"1\">Provides a way to handle singletons of tags.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.TagHelpers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.TagHelpers.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags.TagHelpers",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.Tags.TagHelpers.yml\" sourcestartlinenumber=\"1\">Provides a number of helper functions for <xref href=\"RueI.Parsing.RichTextTag\" data-throw-if-not-resolved=\"false\"></xref>s.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.Tags.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.Tags.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.Tags",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.TextInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.TextInfo.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing.TextInfo",
-      "Summary": "<p sourcefile=\"api/RueI.Parsing.TextInfo.yml\" sourcestartlinenumber=\"1\">Provides information about TMP text at a certain point.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Parsing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Parsing.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Parsing",
-      "Summary": "\n<p sourcefile=\"markdown/namespaces/RueI.Parsing.md\" sourcestartlinenumber=\"5\">The <a href=\"./RueI.Parsing.html\" sourcefile=\"markdown/namespaces/RueI.Parsing.md\" sourcestartlinenumber=\"5\">RueI.Parsing</a> namespace contains a large number of classes mostly used internally by RueI. Notably, classes within this namespace can be used to create <a href=\"../markdown/customtags.html\" sourcefile=\"markdown/namespaces/RueI.Parsing.md\" sourcestartlinenumber=\"5\">custom tags</a>. Additionally, if you want to calculate and parse hints, you can use this namespace.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Patches.HintPatch.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Patches.HintPatch.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Patches.HintPatch",
-      "Summary": "<p sourcefile=\"api/RueI.Patches.HintPatch.yml\" sourcestartlinenumber=\"1\">Patches HintDisplay.Show to detect when hints are shown.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Patches.PatchHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Patches.PatchHelper.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Patches.PatchHelper",
-      "Summary": "<p sourcefile=\"api/RueI.Patches.PatchHelper.yml\" sourcestartlinenumber=\"1\">Provides helpful functions for working with patches.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Patches.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Patches.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Patches",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.RueIMain.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.RueIMain.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.RueIMain",
-      "Summary": "<p sourcefile=\"api/RueI.RueIMain.yml\" sourcestartlinenumber=\"1\">Represents the main class for RueI.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.Ruetility.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.Ruetility.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.Ruetility",
-      "Summary": "<p sourcefile=\"api/RueI.Ruetility.yml\" sourcestartlinenumber=\"1\">Provides helpful functions for dealing with elements and hints.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.UnityAlternative.IAsyncOperation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.UnityAlternative.IAsyncOperation.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.UnityAlternative.IAsyncOperation",
-      "Summary": "<p sourcefile=\"api/RueI.UnityAlternative.IAsyncOperation.yml\" sourcestartlinenumber=\"1\">Represents a generalized handler for an async operation.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.UnityAlternative.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.UnityAlternative.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.UnityAlternative",
-      "Summary": "<p sourcefile=\"api/RueI.UnityAlternative.yml\" sourcestartlinenumber=\"1\">Defines the base class for a provider of methods that may or may not use Unity.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.UnityProvider.MECAsyncOperation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.UnityProvider.MECAsyncOperation.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.UnityProvider.MECAsyncOperation",
-      "Summary": "<p sourcefile=\"api/RueI.UnityProvider.MECAsyncOperation.yml\" sourcestartlinenumber=\"1\">Represents an async operation using a CoroutineHandle.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.UnityProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.UnityProvider.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI.UnityProvider",
-      "Summary": "<p sourcefile=\"api/RueI.UnityProvider.yml\" sourcestartlinenumber=\"1\">Provides Unity methods for the application.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RueI.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RueI.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "RueI",
-      "Summary": "\n<p sourcefile=\"markdown/namespaces/RueI.md\" sourcestartlinenumber=\"5\">The <a href=\"./RueI.html\" sourcefile=\"markdown/namespaces/RueI.md\" sourcestartlinenumber=\"5\">RueI</a> namespace contains classes shared across all of RueI. Generally, you shouldn't need to use the classes and interfaces within this namespace. The exception is the <a href=\"./RueI.RueIMain.html\" sourcefile=\"markdown/namespaces/RueI.md\" sourcestartlinenumber=\"5\">RueIMain</a> class that contains the <a href=\"./RueI.RueIMain.html?q=Ensure#RueI_RueIMain_EnsureInit\" sourcefile=\"markdown/namespaces/RueI.md\" sourcestartlinenumber=\"5\">EnsureInit()</a> method, which should be called by any plugin using RueI upon being loaded.</p>\n"
     },
     {
       "type": "Toc",
@@ -1933,112 +407,6 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "index.md",
-      "output": {
-        ".html": {
-          "relative_path": "index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "markdown/basic-concepts.md",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/basic-concepts.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "markdown/customtags.md",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/customtags.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "markdown/eMec.md",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/eMec.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "markdown/getting-started.md",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "markdown/hintbuilding.md",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/hintbuilding.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "markdown/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/introduction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "markdown/scheduling.md",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/scheduling.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "markdown/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/toc.html"
-        },
-        ".json": {
-          "relative_path": "markdown/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
-        ".json": {
-          "relative_path": "toc.json"
         }
       },
       "version": ""

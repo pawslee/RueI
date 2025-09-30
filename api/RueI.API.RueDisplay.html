@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RueDisplay | RueI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RueDisplay | RueI ">
+      
+      <meta name="description" content="Represents a display for a specific player.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/pawslee/RueI/new/master/apiSpec/new?filename=RueI_API_RueDisplay.md&amp;value=---%0Auid%3A%20RueI.API.RueDisplay%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="RueI">
+            RueI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="RueI.API.RueDisplay">
+
+
+
+  <h1 id="RueI_API_RueDisplay" data-uid="RueI.API.RueDisplay" class="text-break">
+Class RueDisplay  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="RueI.html">RueI</a>.<a class="xref" href="RueI.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>RueI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a display for a specific player.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class RueDisplay</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RueDisplay</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="RueI_API_RueDisplay_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Every player has a <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a>, which is used by RueI to keep track of their elements and send them hints.</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="RueI_API_RueDisplay_Get_" data-uid="RueI.API.RueDisplay.Get*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Get_LabApi_Features_Wrappers_Player_" data-uid="RueI.API.RueDisplay.Get(LabApi.Features.Wrappers.Player)">
+  Get(Player)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a display for a specific <span class="xref">LabApi.Features.Wrappers.Player</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RueDisplay Get(Player player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <span class="xref">Player</span></dt>
+    <dd><p>The ReferenceHub to get the display of.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a></dt>
+    <dd><p>The player's corresponding display.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_API_RueDisplay_Get_" data-uid="RueI.API.RueDisplay.Get*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Get_ReferenceHub_" data-uid="RueI.API.RueDisplay.Get(ReferenceHub)">
+  Get(ReferenceHub)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a display for a specific ReferenceHub.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RueDisplay Get(ReferenceHub hub)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hub</code> <span class="xref">ReferenceHub</span></dt>
+    <dd><p>The ReferenceHub to get the display of.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a></dt>
+    <dd><p>The player's corresponding display.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_API_RueDisplay_Remove_" data-uid="RueI.API.RueDisplay.Remove*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Remove_RueI_API_Elements_Tag_" data-uid="RueI.API.RueDisplay.Remove(RueI.API.Elements.Tag)">
+  Remove(Tag)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the element with the given tag from the <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a>, if there is one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(Tag tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a></dt>
+    <dd><p>The tag for which remove the associated <a class="xref" href="RueI.API.Elements.Element.html">Element</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_API_RueDisplay_SetVisible_" data-uid="RueI.API.RueDisplay.SetVisible*"></a>
+
+  <h3 id="RueI_API_RueDisplay_SetVisible_RueI_API_Elements_Tag_System_Boolean_" data-uid="RueI.API.RueDisplay.SetVisible(RueI.API.Elements.Tag,System.Boolean)">
+  SetVisible(Tag, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the visibility of a <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisible(Tag tag, bool isVisible)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a></dt>
+    <dd><p>The <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a> to set the visibility of.</p>
+</dd>
+    <dt><code>isVisible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether elements with the <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a> should be visible.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="RueI_API_RueDisplay_SetVisible_RueI_API_Elements_Tag_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method sets the visibility of any current or future elements with the <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a>.</p>
+</div>
+
+
+
+
+  <a id="RueI_API_RueDisplay_Show_" data-uid="RueI.API.RueDisplay.Show*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Show_RueI_API_Elements_Element_System_Single_" data-uid="RueI.API.RueDisplay.Show(RueI.API.Elements.Element,System.Single)">
+  Show(Element, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an <a class="xref" href="RueI.API.Elements.Element.html">Element</a> to this <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a> for a certain duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(Element element, float duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="RueI.API.Elements.Element.html">Element</a></dt>
+    <dd><p>The <a class="xref" href="RueI.API.Elements.Element.html">Element</a> to add.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><param name="duration">The duration to show the element, in seconds.
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="RueI_API_RueDisplay_Show_RueI_API_Elements_Element_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When adding an element using this method, it will not have a <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a>.
+Therefore, there is no way to remove the element early.</p>
+</div>
+
+
+
+
+  <a id="RueI_API_RueDisplay_Show_" data-uid="RueI.API.RueDisplay.Show*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Show_RueI_API_Elements_Element_System_TimeSpan_" data-uid="RueI.API.RueDisplay.Show(RueI.API.Elements.Element,System.TimeSpan)">
+  Show(Element, TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><summary>
+Adds an <a class="xref" href="RueI.API.Elements.Element.html">Element</a> to this <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a> for a certain duration.
+</summary>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(Element element, TimeSpan duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="RueI.API.Elements.Element.html">Element</a></dt>
+    <dd><p>The <a class="xref" href="RueI.API.Elements.Element.html">Element</a> to add.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><param name="duration">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> indicating how long to show the <a class="xref" href="RueI.API.Elements.Element.html">Element</a> for.
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="RueI_API_RueDisplay_Show_RueI_API_Elements_Element_System_TimeSpan__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><remarks>
+When adding an element using this method, it will not have a <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a>.
+Therefore, there is no way to remove the element early.
+</remarks>
+</div>
+
+
+
+
+  <a id="RueI_API_RueDisplay_Show_" data-uid="RueI.API.RueDisplay.Show*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Show_RueI_API_Elements_Tag_RueI_API_Elements_Element_" data-uid="RueI.API.RueDisplay.Show(RueI.API.Elements.Tag,RueI.API.Elements.Element)">
+  Show(Tag, Element)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an <a class="xref" href="RueI.API.Elements.Element.html">Element</a> with a unique <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a> to this <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(Tag tag, Element element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a></dt>
+    <dd><p>A <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a> to use. If an <a class="xref" href="RueI.API.Elements.Element.html">Element</a> already has this tag, it will be replaced.</p>
+</dd>
+    <dt><code>element</code> <a class="xref" href="RueI.API.Elements.Element.html">Element</a></dt>
+    <dd><p>The <a class="xref" href="RueI.API.Elements.Element.html">Element</a> to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_API_RueDisplay_Show_" data-uid="RueI.API.RueDisplay.Show*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Show_RueI_API_Elements_Tag_RueI_API_Elements_Element_System_Single_" data-uid="RueI.API.RueDisplay.Show(RueI.API.Elements.Tag,RueI.API.Elements.Element,System.Single)">
+  Show(Tag, Element, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an <a class="xref" href="RueI.API.Elements.Element.html">Element</a> with a unique <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a> to this <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a> for a certain duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(Tag tag, Element element, float duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a></dt>
+    <dd><param name="tag">A <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a> to use. If an <a class="xref" href="RueI.API.Elements.Element.html">Element</a> already has this tag, it will be replaced.
+</dd>
+    <dt><code>element</code> <a class="xref" href="RueI.API.Elements.Element.html">Element</a></dt>
+    <dd><p>The <a class="xref" href="RueI.API.Elements.Element.html">Element</a> to add.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The duration to show the element, in seconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_API_RueDisplay_Show_" data-uid="RueI.API.RueDisplay.Show*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Show_RueI_API_Elements_Tag_RueI_API_Elements_Element_System_TimeSpan_" data-uid="RueI.API.RueDisplay.Show(RueI.API.Elements.Tag,RueI.API.Elements.Element,System.TimeSpan)">
+  Show(Tag, Element, TimeSpan)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an <a class="xref" href="RueI.API.Elements.Element.html">Element</a> with a unique <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a> to this <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a> for a certain period of time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(Tag tag, Element element, TimeSpan duration)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a></dt>
+    <dd><param name="tag">A <a class="xref" href="RueI.API.Elements.Tag.html">Tag</a> to use. If an <a class="xref" href="RueI.API.Elements.Element.html">Element</a> already has this tag, it will be replaced.
+</dd>
+    <dt><code>element</code> <a class="xref" href="RueI.API.Elements.Element.html">Element</a></dt>
+    <dd><p>The <a class="xref" href="RueI.API.Elements.Element.html">Element</a> to add.</p>
+</dd>
+    <dt><code>duration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> indicating how long to show the <a class="xref" href="RueI.API.Elements.Element.html">Element</a> for.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_API_RueDisplay_Update_" data-uid="RueI.API.RueDisplay.Update*"></a>
+
+  <h3 id="RueI_API_RueDisplay_Update" data-uid="RueI.API.RueDisplay.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the display, refreshing any <a class="xref" href="RueI.API.Elements.DynamicElement.html">DynamicElement</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/pawslee/RueI/blob/master/RueI/API/RueDisplay.cs/#L24" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

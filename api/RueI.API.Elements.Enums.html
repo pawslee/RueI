@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>RueI | RueI </title>
+      <title>Namespace RueI.API.Elements.Enums | RueI </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="RueI | RueI ">
+      <meta name="title" content="Namespace RueI.API.Elements.Enums | RueI ">
       
       
-      <link rel="icon" href="favicon.ico">
-      <link rel="stylesheet" href="public/docfx.min.css">
-      <link rel="stylesheet" href="public/main.css">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="">
-      <meta name="docfx:tocrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
       
-      <meta name="docfx:rel" content="">
+      <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/pawslee/RueI/blob/master/README.md/#L1">
+      
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
 
-      <script type="module" src="./public/docfx.min.js"></script>
+      <script type="module" src="./../public/docfx.min.js"></script>
 
       <script>
         const theme = localStorage.getItem('theme') || 'auto'
@@ -39,12 +39,12 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="index.html">
-            <img id="logo" class="svg" src="logo.svg" alt="RueI">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="RueI">
             RueI
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,47 +63,54 @@
     </header>
 
     <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
 
       <div class="content">
         <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
 
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="">
-<h1 id="ruei">RueI</h1>
+        <article data-uid="RueI.API.Elements.Enums">
 
-<p>RueI is a hint framework, designed to be the definitive way to display multiple hints at once. you can get the latest release <a href="https://github.com/Ruemena/RueI/releases/latest">here</a>.</p>
-<p>if you want to develop using RueI, make sure you install the <a href="https://www.nuget.org/packages/RueI">nuget package</a></p>
-<h3 id="example">Example</h3>
-<pre><code class="lang-cs">RueDisplay display = RueDisplay.Get(player);
-Tag welcomeTag = new();
-display.Show(welcomeTag, new BasicElement(800, &quot;Welcome to the server!&quot;));
-display.Show(new BasicElement(300, &quot;Don't forget to read the rules!&quot;), 10f);
-Timing.CallDelayed(5f, () =&gt;
-{
-    display.Show(welcomeTag, new BasicElement(800, &quot;New update: We added support for multiple hints at once!&quot;), 10f);
-});
-</code></pre>
-<h3 id="features">Features</h3>
-<ul>
-<li>support for displaying multiple hints at once without them interfering with eachother</li>
-<li>allows using hint parameters</li>
-<li>extensions for StringBuilder that makes adding tags easier</li>
-<li>aspect ratio support</li>
-<li>extremely optimized and efficient</li>
-</ul>
-<p>RueI is not a grid-based or line-based system, it calculates the offset necessary to put a hint at the same position no matter what</p>
-<h2 id="comments">Comments</h2>
-<p>if you've encountered any bugs please <a href="https://github.com/paislee/RueI/issues">make an issue</a> (it helps me out a ton)</p>
+  <h1 id="RueI_API_Elements_Enums" data-uid="RueI.API.Elements.Enums" class="text-break">Namespace RueI.API.Elements.Enums</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="RueI.API.Elements.Enums.NoparseSettings.html">NoparseSettings</a></dt>
+      <dd><p>Defines the behavior of noparse tags in <a class="xref" href="RueI.API.Elements.Element.html">Element</a> text.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="RueI.API.Elements.Enums.VerticalAlign.html">VerticalAlign</a></dt>
+      <dd><p>Specifies how an element should be aligned vertically when there are multiple lines.</p>
+</dd>
+    </dl>
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pawslee/RueI/blob/master/README.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
-        <div class="next-article d-print-none border-top" id="nextArticle"></div>
 
       </div>
 

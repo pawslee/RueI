@@ -1,0 +1,2759 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HintBuilding | RueI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HintBuilding | RueI ">
+      
+      <meta name="description" content="Provides extensions for adding rich text tags to s.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/pawslee/RueI/new/master/apiSpec/new?filename=RueI_Utils_HintBuilding.md&amp;value=---%0Auid%3A%20RueI.Utils.HintBuilding%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="RueI">
+            RueI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="RueI.Utils.HintBuilding">
+
+
+
+  <h1 id="RueI_Utils_HintBuilding" data-uid="RueI.Utils.HintBuilding" class="text-break">
+Class HintBuilding  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="RueI.html">RueI</a>.<a class="xref" href="RueI.Utils.html">Utils</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>RueI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides extensions for adding rich text tags to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>s.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class HintBuilding</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">HintBuilding</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+  <h2 id="RueI_Utils_HintBuilding_examples">Examples</h2>
+  <p>This example demonstrates simple usage of the <a class="xref" href="RueI.Utils.HintBuilding.html">HintBuilding</a> methods. Note that you do not
+need a custom <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use the methods.</p>
+<pre><code class="lang-csharp">StringBuilder sb = new();
+sb.SetColor(255, 0, 0);</code></pre>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="RueI_Utils_HintBuilding_AddLinebreak_" data-uid="RueI.Utils.HintBuilding.AddLinebreak*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_AddLinebreak_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.AddLinebreak(System.Text.StringBuilder)">
+  AddLinebreak(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a linebreak to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder AddLinebreak(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_AddSpace_" data-uid="RueI.Utils.HintBuilding.AddSpace*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_AddSpace_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.AddSpace(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  AddSpace(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a space tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder AddSpace(this StringBuilder sb, float space, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>space</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The amount of space to add.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the pos tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_AddSprite_" data-uid="RueI.Utils.HintBuilding.AddSprite*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_AddSprite_System_Text_StringBuilder_System_Int32_" data-uid="RueI.Utils.HintBuilding.AddSprite(System.Text.StringBuilder,System.Int32)">
+  AddSprite(StringBuilder, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a sprite tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder AddSprite(this StringBuilder sb, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index (0-20) of the sprite tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_AddSprite_" data-uid="RueI.Utils.HintBuilding.AddSprite*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_AddSprite_System_Text_StringBuilder_System_Int32_System_Drawing_Color_" data-uid="RueI.Utils.HintBuilding.AddSprite(System.Text.StringBuilder,System.Int32,System.Drawing.Color)">
+  AddSprite(StringBuilder, int, Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a sprite tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder AddSprite(this StringBuilder sb, int index, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index (0-20) of the sprite tag.</p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p>The color of the sprite tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_AppendPreservedLowercase_" data-uid="RueI.Utils.HintBuilding.AppendPreservedLowercase*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_AppendPreservedLowercase_System_Text_StringBuilder_System_String_" data-uid="RueI.Utils.HintBuilding.AppendPreservedLowercase(System.Text.StringBuilder,System.String)">
+  AppendPreservedLowercase(StringBuilder, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Appends a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> that has additional tags to preserve the true case of the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder AppendPreservedLowercase(this StringBuilder sb, string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> to add, with preserved case. the tags to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The same <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> with additional tags that preserve casing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="RueI_Utils_HintBuilding_AppendPreservedLowercase_System_Text_StringBuilder_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>By default, lowercase text appear as smallcaps. This method ensures lowercase characters are truly lowercase.</p>
+</div>
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseAlign_" data-uid="RueI.Utils.HintBuilding.CloseAlign*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseAlign_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseAlign(System.Text.StringBuilder)">
+  CloseAlign(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing align tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseAlign(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseAlpha_" data-uid="RueI.Utils.HintBuilding.CloseAlpha*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseAlpha_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseAlpha(System.Text.StringBuilder)">
+  CloseAlpha(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing alpha tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseAlpha(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseBold_" data-uid="RueI.Utils.HintBuilding.CloseBold*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseBold_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseBold(System.Text.StringBuilder)">
+  CloseBold(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing bold tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseBold(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseCase_" data-uid="RueI.Utils.HintBuilding.CloseCase*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseCase_System_Text_StringBuilder_RueI_Utils_Enums_CaseStyle_" data-uid="RueI.Utils.HintBuilding.CloseCase(System.Text.StringBuilder,RueI.Utils.Enums.CaseStyle)">
+  CloseCase(StringBuilder, CaseStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing case tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseCase(this StringBuilder sb, CaseStyle caseStyle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>caseStyle</code> <a class="xref" href="RueI.Utils.Enums.CaseStyle.html">CaseStyle</a></dt>
+    <dd><p>The case to close.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseCharacterSpace_" data-uid="RueI.Utils.HintBuilding.CloseCharacterSpace*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseCharacterSpace_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseCharacterSpace(System.Text.StringBuilder)">
+  CloseCharacterSpace(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L631"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing cspace tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseCharacterSpace(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseColor_" data-uid="RueI.Utils.HintBuilding.CloseColor*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseColor_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseColor(System.Text.StringBuilder)">
+  CloseColor(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing color tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseColor(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseHorizontalPos_" data-uid="RueI.Utils.HintBuilding.CloseHorizontalPos*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseHorizontalPos_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseHorizontalPos(System.Text.StringBuilder)">
+  CloseHorizontalPos(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing pos tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseHorizontalPos(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseIndent_" data-uid="RueI.Utils.HintBuilding.CloseIndent*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseIndent_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseIndent(System.Text.StringBuilder)">
+  CloseIndent(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L561"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing indent tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseIndent(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseItalics_" data-uid="RueI.Utils.HintBuilding.CloseItalics*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseItalics_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseItalics(System.Text.StringBuilder)">
+  CloseItalics(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing italics tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseItalics(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseLineHeight_" data-uid="RueI.Utils.HintBuilding.CloseLineHeight*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseLineHeight_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseLineHeight(System.Text.StringBuilder)">
+  CloseLineHeight(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing line-height tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseLineHeight(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseMargins_" data-uid="RueI.Utils.HintBuilding.CloseMargins*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseMargins_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseMargins(System.Text.StringBuilder)">
+  CloseMargins(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L603"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing margins tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseMargins(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseMark_" data-uid="RueI.Utils.HintBuilding.CloseMark*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseMark_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseMark(System.Text.StringBuilder)">
+  CloseMark(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing mark tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseMark(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseMonospace_" data-uid="RueI.Utils.HintBuilding.CloseMonospace*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseMonospace_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseMonospace(System.Text.StringBuilder)">
+  CloseMonospace(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing monospace tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseMonospace(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseNobreak_" data-uid="RueI.Utils.HintBuilding.CloseNobreak*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseNobreak_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseNobreak(System.Text.StringBuilder)">
+  CloseNobreak(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L617"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing nobreak tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseNobreak(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseNoparse_" data-uid="RueI.Utils.HintBuilding.CloseNoparse*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseNoparse_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseNoparse(System.Text.StringBuilder)">
+  CloseNoparse(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing noparse tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseNoparse(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseRotation_" data-uid="RueI.Utils.HintBuilding.CloseRotation*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseRotation_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseRotation(System.Text.StringBuilder)">
+  CloseRotation(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing rotation tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseRotation(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseScale_" data-uid="RueI.Utils.HintBuilding.CloseScale*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseScale_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseScale(System.Text.StringBuilder)">
+  CloseScale(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing scale tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseScale(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseSize_" data-uid="RueI.Utils.HintBuilding.CloseSize*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseSize_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseSize(System.Text.StringBuilder)">
+  CloseSize(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing size tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseSize(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseStrikethrough_" data-uid="RueI.Utils.HintBuilding.CloseStrikethrough*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseStrikethrough_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseStrikethrough(System.Text.StringBuilder)">
+  CloseStrikethrough(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing strikethrough tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseStrikethrough(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseSubscript_" data-uid="RueI.Utils.HintBuilding.CloseSubscript*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseSubscript_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseSubscript(System.Text.StringBuilder)">
+  CloseSubscript(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing subscript tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseSubscript(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseSuperscript_" data-uid="RueI.Utils.HintBuilding.CloseSuperscript*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseSuperscript_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseSuperscript(System.Text.StringBuilder)">
+  CloseSuperscript(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing superscript tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseSuperscript(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseUnderline_" data-uid="RueI.Utils.HintBuilding.CloseUnderline*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseUnderline_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseUnderline(System.Text.StringBuilder)">
+  CloseUnderline(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing underline tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseUnderline(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseVOffset_" data-uid="RueI.Utils.HintBuilding.CloseVOffset*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseVOffset_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseVOffset(System.Text.StringBuilder)">
+  CloseVOffset(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L638"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing voffset tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseVOffset(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_CloseWidth_" data-uid="RueI.Utils.HintBuilding.CloseWidth*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_CloseWidth_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.CloseWidth(System.Text.StringBuilder)">
+  CloseWidth(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L652"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a closing width tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder CloseWidth(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_ConvertToHex_" data-uid="RueI.Utils.HintBuilding.ConvertToHex*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_ConvertToHex_System_Drawing_Color_" data-uid="RueI.Utils.HintBuilding.ConvertToHex(System.Drawing.Color)">
+  ConvertToHex(Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> to a hex code string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertToHex(Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a> to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The color as a hex code string.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_PreserveLowercase_" data-uid="RueI.Utils.HintBuilding.PreserveLowercase*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_PreserveLowercase_System_String_" data-uid="RueI.Utils.HintBuilding.PreserveLowercase(System.String)">
+  PreserveLowercase(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> that has additional tags to preserve the true case of the string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PreserveLowercase(string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> to add the tags to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> with additional tags that preserve casing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="RueI_Utils_HintBuilding_PreserveLowercase_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><remarks>
+By default, lowercase text appear as smallcaps. This method ensures lowercase characters are truly lowercase.
+</remarks>
+<br>
+If you are appending to an existing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>, use the <a class="xref" href="RueI.Utils.HintBuilding.html#RueI_Utils_HintBuilding_AppendPreservedLowercase_System_Text_StringBuilder_System_String_">AppendPreservedLowercase(StringBuilder, string)</a>
+method, as it is faster.
+</div>
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_Sanitize_" data-uid="RueI.Utils.HintBuilding.Sanitize*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_Sanitize_System_String_" data-uid="RueI.Utils.HintBuilding.Sanitize(System.String)">
+  Sanitize(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sanitizes a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> so that it has no tags by wrapping it in noparse and sanitizing any close noparses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Sanitize(string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> to sanitize.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The sanitized <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> with additional tags that preserve casing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="RueI_Utils_HintBuilding_Sanitize_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><remarks>
+By default, lowercase text appear as smallcaps. This method ensures lowercase characters are truly lowercase.
+</remarks>
+<br>
+If you are appending to an existing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>, use the <a class="xref" href="RueI.Utils.HintBuilding.html#RueI_Utils_HintBuilding_AppendPreservedLowercase_System_Text_StringBuilder_System_String_">AppendPreservedLowercase(StringBuilder, string)</a>
+method, as it is faster.
+</div>
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetAlignment_" data-uid="RueI.Utils.HintBuilding.SetAlignment*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetAlignment_System_Text_StringBuilder_RueI_Utils_Enums_AlignStyle_" data-uid="RueI.Utils.HintBuilding.SetAlignment(System.Text.StringBuilder,RueI.Utils.Enums.AlignStyle)">
+  SetAlignment(StringBuilder, AlignStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an alignment tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetAlignment(this StringBuilder sb, AlignStyle align)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>align</code> <a class="xref" href="RueI.Utils.Enums.AlignStyle.html">AlignStyle</a></dt>
+    <dd><p>The <a class="xref" href="RueI.Utils.Enums.AlignStyle.html">AlignStyle</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetAlpha_" data-uid="RueI.Utils.HintBuilding.SetAlpha*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetAlpha_System_Text_StringBuilder_System_Int32_" data-uid="RueI.Utils.HintBuilding.SetAlpha(System.Text.StringBuilder,System.Int32)">
+  SetAlpha(StringBuilder, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an alpha tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetAlpha(this StringBuilder sb, int alpha)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>alpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The alpha (0-255).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetBold_" data-uid="RueI.Utils.HintBuilding.SetBold*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetBold_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.SetBold(System.Text.StringBuilder)">
+  SetBold(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a bold tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetBold(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetCase_" data-uid="RueI.Utils.HintBuilding.SetCase*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetCase_System_Text_StringBuilder_RueI_Utils_Enums_CaseStyle_" data-uid="RueI.Utils.HintBuilding.SetCase(System.Text.StringBuilder,RueI.Utils.Enums.CaseStyle)">
+  SetCase(StringBuilder, CaseStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a case tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetCase(this StringBuilder sb, CaseStyle caseStyle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>caseStyle</code> <a class="xref" href="RueI.Utils.Enums.CaseStyle.html">CaseStyle</a></dt>
+    <dd><p>The case to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetCharacterSpace_" data-uid="RueI.Utils.HintBuilding.SetCharacterSpace*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetCharacterSpace_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetCharacterSpace(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetCharacterSpace(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a size tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetCharacterSpace(this StringBuilder sb, float size, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The size to include in the character spacing tag.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the character space tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetColor_" data-uid="RueI.Utils.HintBuilding.SetColor*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetColor_System_Text_StringBuilder_System_Drawing_Color_" data-uid="RueI.Utils.HintBuilding.SetColor(System.Text.StringBuilder,System.Drawing.Color)">
+  SetColor(StringBuilder, Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a color tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetColor(this StringBuilder sb, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p>The color to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetColor_" data-uid="RueI.Utils.HintBuilding.SetColor*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetColor_System_Text_StringBuilder_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="RueI.Utils.HintBuilding.SetColor(System.Text.StringBuilder,System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetColor(StringBuilder, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a color tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> from RGBA values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetColor(this StringBuilder sb, int r, int g, int b, int a = 255)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The red (0-255) of the color.</p>
+</dd>
+    <dt><code>g</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The green (0-255) pf the color.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The blue (0-255) of the color.</p>
+</dd>
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The optional alpha (0-255) of the color.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetColor_" data-uid="RueI.Utils.HintBuilding.SetColor*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetColor_System_Text_StringBuilder_UnityEngine_Color_" data-uid="RueI.Utils.HintBuilding.SetColor(System.Text.StringBuilder,UnityEngine.Color)">
+  SetColor(StringBuilder, Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a color tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> using a UnityEngine.Color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetColor(this StringBuilder sb, UnityEngine.Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd><p>The UnityEngine.Color to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetHorizontalPos_" data-uid="RueI.Utils.HintBuilding.SetHorizontalPos*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetHorizontalPos_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetHorizontalPos(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetHorizontalPos(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a pos tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetHorizontalPos(this StringBuilder sb, float pos, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The size of the pos tag.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the pos tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetIndent_" data-uid="RueI.Utils.HintBuilding.SetIndent*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetIndent_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetIndent(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetIndent(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an indent tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetIndent(this StringBuilder sb, float indent, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>indent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The indent size to include in the indent tag.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the indent tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetItalics_" data-uid="RueI.Utils.HintBuilding.SetItalics*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetItalics_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.SetItalics(System.Text.StringBuilder)">
+  SetItalics(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an italics tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetItalics(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetLineHeight_" data-uid="RueI.Utils.HintBuilding.SetLineHeight*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetLineHeight_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetLineHeight(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetLineHeight(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a line-height tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetLineHeight(this StringBuilder sb, float size, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The line height to include in the line-height tag.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the line-height tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetMargins_" data-uid="RueI.Utils.HintBuilding.SetMargins*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetMargins_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MarginDirection_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetMargins(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MarginDirection,RueI.Utils.Enums.MeasurementUnit)">
+  SetMargins(StringBuilder, float, MarginDirection, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an margins tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetMargins(this StringBuilder sb, float margins, MarginDirection direction, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>margins</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The size of the margins.</p>
+</dd>
+    <dt><code>direction</code> <a class="xref" href="RueI.Utils.Enums.MarginDirection.html">MarginDirection</a></dt>
+    <dd><p>The direction to add the margins.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the margins tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetMargins_" data-uid="RueI.Utils.HintBuilding.SetMargins*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetMargins_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetMargins(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetMargins(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an margins tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetMargins(this StringBuilder sb, float margins, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>margins</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The size of the margins.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the margins tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetMark_" data-uid="RueI.Utils.HintBuilding.SetMark*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetMark_System_Text_StringBuilder_System_Drawing_Color_" data-uid="RueI.Utils.HintBuilding.SetMark(System.Text.StringBuilder,System.Drawing.Color)">
+  SetMark(StringBuilder, Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a mark tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetMark(this StringBuilder sb, Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p>The color to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetMark_" data-uid="RueI.Utils.HintBuilding.SetMark*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetMark_System_Text_StringBuilder_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="RueI.Utils.HintBuilding.SetMark(System.Text.StringBuilder,System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetMark(StringBuilder, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a mark tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> from RGBA values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetMark(this StringBuilder sb, int r, int g, int b, int a)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>r</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The red (0-255) of the color.</p>
+</dd>
+    <dt><code>g</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The green (0-255) of the color.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The blue (0-255) of the color.</p>
+</dd>
+    <dt><code>a</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The alpha (0-255) of the color.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetMark_" data-uid="RueI.Utils.HintBuilding.SetMark*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetMark_System_Text_StringBuilder_UnityEngine_Color_" data-uid="RueI.Utils.HintBuilding.SetMark(System.Text.StringBuilder,UnityEngine.Color)">
+  SetMark(StringBuilder, Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a mark tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> using a UnityEngine.Color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetMark(this StringBuilder sb, UnityEngine.Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd><p>The UnityEngine.Color to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetMonospace_" data-uid="RueI.Utils.HintBuilding.SetMonospace*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetMonospace_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetMonospace(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetMonospace(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a monospace tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetMonospace(this StringBuilder sb, float spacing, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>spacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The size of the spacing.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the monospacing tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetNobreak_" data-uid="RueI.Utils.HintBuilding.SetNobreak*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetNobreak_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.SetNobreak(System.Text.StringBuilder)">
+  SetNobreak(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a nobreak tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetNobreak(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetNoparse_" data-uid="RueI.Utils.HintBuilding.SetNoparse*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetNoparse_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.SetNoparse(System.Text.StringBuilder)">
+  SetNoparse(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a noparse tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetNoparse(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetRotation_" data-uid="RueI.Utils.HintBuilding.SetRotation*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetRotation_System_Text_StringBuilder_System_Int32_" data-uid="RueI.Utils.HintBuilding.SetRotation(System.Text.StringBuilder,System.Int32)">
+  SetRotation(StringBuilder, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a rotation tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetRotation(this StringBuilder sb, int rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The rotation (-180 to 180) of the tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetScale_" data-uid="RueI.Utils.HintBuilding.SetScale*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetScale_System_Text_StringBuilder_System_Single_" data-uid="RueI.Utils.HintBuilding.SetScale(System.Text.StringBuilder,System.Single)">
+  SetScale(StringBuilder, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a horizontal scale tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetScale(this StringBuilder sb, float scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The scale size to include in the scale tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetSize_" data-uid="RueI.Utils.HintBuilding.SetSize*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetSize_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetSize(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetSize(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a size tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetSize(this StringBuilder sb, float size, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The size to include in the size tag.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the size tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetStrikethrough_" data-uid="RueI.Utils.HintBuilding.SetStrikethrough*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetStrikethrough_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.SetStrikethrough(System.Text.StringBuilder)">
+  SetStrikethrough(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a strikethrough tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetStrikethrough(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetSubscript_" data-uid="RueI.Utils.HintBuilding.SetSubscript*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetSubscript_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.SetSubscript(System.Text.StringBuilder)">
+  SetSubscript(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a subscript tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetSubscript(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetSuperscript_" data-uid="RueI.Utils.HintBuilding.SetSuperscript*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetSuperscript_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.SetSuperscript(System.Text.StringBuilder)">
+  SetSuperscript(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a superscript tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetSuperscript(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetUnderline_" data-uid="RueI.Utils.HintBuilding.SetUnderline*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetUnderline_System_Text_StringBuilder_" data-uid="RueI.Utils.HintBuilding.SetUnderline(System.Text.StringBuilder)">
+  SetUnderline(StringBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an underline tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetUnderline(this StringBuilder sb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetVOffset_" data-uid="RueI.Utils.HintBuilding.SetVOffset*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetVOffset_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetVOffset(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetVOffset(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a voffset tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetVOffset(this StringBuilder sb, float offset, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The size of the voffset tag.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement unit of the voffset tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_SetWidth_" data-uid="RueI.Utils.HintBuilding.SetWidth*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_SetWidth_System_Text_StringBuilder_System_Single_RueI_Utils_Enums_MeasurementUnit_" data-uid="RueI.Utils.HintBuilding.SetWidth(System.Text.StringBuilder,System.Single,RueI.Utils.Enums.MeasurementUnit)">
+  SetWidth(StringBuilder, float, MeasurementUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a width tag to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StringBuilder SetWidth(this StringBuilder sb, float offset, MeasurementUnit unit = MeasurementUnit.Pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sb</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> to use.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The size of the new width.</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="RueI.Utils.Enums.MeasurementUnit.html">MeasurementUnit</a></dt>
+    <dd><p>The measurement style of the width tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>A reference to the original <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RueI_Utils_HintBuilding_UnityToSystemColor_" data-uid="RueI.Utils.HintBuilding.UnityToSystemColor*"></a>
+
+  <h3 id="RueI_Utils_HintBuilding_UnityToSystemColor_UnityEngine_Color_" data-uid="RueI.Utils.HintBuilding.UnityToSystemColor(UnityEngine.Color)">
+  UnityToSystemColor(Color)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a UnityEngine.Color to a system <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color UnityToSystemColor(UnityEngine.Color unityColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unityColor</code> <span class="xref">Color</span></dt>
+    <dd><p>The UnityEngine.Color to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a></dt>
+    <dd><p>The converted <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.color">Color</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/pawslee/RueI/blob/master/RueI/Utils/HintBuilding.cs/#L20" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
