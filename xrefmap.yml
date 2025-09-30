@@ -51,6 +51,57 @@ references:
   isSpec: "True"
   fullName: RueI.API.Elements.BasicElement.GetParsedData
   nameWithType: BasicElement.GetParsedData
+- uid: RueI.API.Elements.CachedElement
+  name: CachedElement
+  href: api/RueI.API.Elements.CachedElement.html
+  commentId: T:RueI.API.Elements.CachedElement
+  fullName: RueI.API.Elements.CachedElement
+  nameWithType: CachedElement
+- uid: RueI.API.Elements.CachedElement.#ctor(System.Single,System.TimeSpan,System.Func{System.String})
+  name: CachedElement(float, TimeSpan, Func<string>)
+  href: api/RueI.API.Elements.CachedElement.html#RueI_API_Elements_CachedElement__ctor_System_Single_System_TimeSpan_System_Func_System_String__
+  commentId: M:RueI.API.Elements.CachedElement.#ctor(System.Single,System.TimeSpan,System.Func{System.String})
+  name.vb: New(Single, TimeSpan, Func(Of String))
+  fullName: RueI.API.Elements.CachedElement.CachedElement(float, System.TimeSpan, System.Func<string>)
+  fullName.vb: RueI.API.Elements.CachedElement.New(Single, System.TimeSpan, System.Func(Of String))
+  nameWithType: CachedElement.CachedElement(float, TimeSpan, Func<string>)
+  nameWithType.vb: CachedElement.New(Single, TimeSpan, Func(Of String))
+- uid: RueI.API.Elements.CachedElement.#ctor*
+  name: CachedElement
+  href: api/RueI.API.Elements.CachedElement.html#RueI_API_Elements_CachedElement__ctor_
+  commentId: Overload:RueI.API.Elements.CachedElement.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: RueI.API.Elements.CachedElement.CachedElement
+  fullName.vb: RueI.API.Elements.CachedElement.New
+  nameWithType: CachedElement.CachedElement
+  nameWithType.vb: CachedElement.New
+- uid: RueI.API.Elements.CachedElement.CacheTime
+  name: CacheTime
+  href: api/RueI.API.Elements.CachedElement.html#RueI_API_Elements_CachedElement_CacheTime
+  commentId: P:RueI.API.Elements.CachedElement.CacheTime
+  fullName: RueI.API.Elements.CachedElement.CacheTime
+  nameWithType: CachedElement.CacheTime
+- uid: RueI.API.Elements.CachedElement.CacheTime*
+  name: CacheTime
+  href: api/RueI.API.Elements.CachedElement.html#RueI_API_Elements_CachedElement_CacheTime_
+  commentId: Overload:RueI.API.Elements.CachedElement.CacheTime
+  isSpec: "True"
+  fullName: RueI.API.Elements.CachedElement.CacheTime
+  nameWithType: CachedElement.CacheTime
+- uid: RueI.API.Elements.CachedElement.GetParsedData(ReferenceHub)
+  name: GetParsedData(ReferenceHub)
+  href: api/RueI.API.Elements.CachedElement.html#RueI_API_Elements_CachedElement_GetParsedData_ReferenceHub_
+  commentId: M:RueI.API.Elements.CachedElement.GetParsedData(ReferenceHub)
+  fullName: RueI.API.Elements.CachedElement.GetParsedData(ReferenceHub)
+  nameWithType: CachedElement.GetParsedData(ReferenceHub)
+- uid: RueI.API.Elements.CachedElement.GetParsedData*
+  name: GetParsedData
+  href: api/RueI.API.Elements.CachedElement.html#RueI_API_Elements_CachedElement_GetParsedData_
+  commentId: Overload:RueI.API.Elements.CachedElement.GetParsedData
+  isSpec: "True"
+  fullName: RueI.API.Elements.CachedElement.GetParsedData
+  nameWithType: CachedElement.GetParsedData
 - uid: RueI.API.Elements.DynamicElement
   name: DynamicElement
   href: api/RueI.API.Elements.DynamicElement.html

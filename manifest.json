@@ -36,6 +36,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/RueI.API.Elements.CachedElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RueI.API.Elements.CachedElement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RueI.API.Elements.CachedElement",
+      "Summary": "<p sourcefile=\"api/RueI.API.Elements.CachedElement.yml\" sourcestartlinenumber=\"1\">Represents a <xref href=\"RueI.API.Elements.DynamicElement\" data-throw-if-not-resolved=\"false\"></xref> that caches text for a certain period of time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/RueI.API.Elements.DynamicElement.yml",
       "output": {
         ".html": {

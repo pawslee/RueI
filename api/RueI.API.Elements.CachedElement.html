@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DynamicElement | RueI </title>
+      <title>Class CachedElement | RueI </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DynamicElement | RueI ">
+      <meta name="title" content="Class CachedElement | RueI ">
       
-      <meta name="description" content="Represents an element that obtains its text from a supplied function and regenerates when a display is updated.">
+      <meta name="description" content="Represents a  that caches text for a certain period of time.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/pawslee/RueI/new/master/apiSpec/new?filename=RueI_API_Elements_DynamicElement.md&amp;value=---%0Auid%3A%20RueI.API.Elements.DynamicElement%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/pawslee/RueI/new/master/apiSpec/new?filename=RueI_API_Elements_CachedElement.md&amp;value=---%0Auid%3A%20RueI.API.Elements.CachedElement%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="RueI.API.Elements.DynamicElement">
+        <article data-uid="RueI.API.Elements.CachedElement">
 
 
 
-  <h1 id="RueI_API_Elements_DynamicElement" data-uid="RueI.API.Elements.DynamicElement" class="text-break">
-Class DynamicElement  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/DynamicElement.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h1 id="RueI_API_Elements_CachedElement" data-uid="RueI.API.Elements.CachedElement" class="text-break">
+Class CachedElement  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/CachedElement.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,12 +97,12 @@ Class DynamicElement  <a class="header-action link-secondary" title="View source
   <dl><dt>Assembly</dt><dd>RueI.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Represents an element that obtains its text from a supplied function and regenerates when a display is updated.</p>
+  <div class="markdown summary"><p>Represents a <a class="xref" href="RueI.API.Elements.DynamicElement.html">DynamicElement</a> that caches text for a certain period of time.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DynamicElement : Element</code></pre>
+    <pre><code class="lang-csharp hljs">public class CachedElement : DynamicElement</code></pre>
   </div>
 
 
@@ -113,21 +113,22 @@ Class DynamicElement  <a class="header-action link-secondary" title="View source
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="RueI.API.Elements.Element.html">Element</a></div>
-      <div><span class="xref">DynamicElement</span></div>
+      <div><a class="xref" href="RueI.API.Elements.DynamicElement.html">DynamicElement</a></div>
+      <div><span class="xref">CachedElement</span></div>
     </dd>
   </dl>
 
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="RueI.API.Elements.CachedElement.html">CachedElement</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="RueI.API.Elements.DynamicElement.html#RueI_API_Elements_DynamicElement_UpdateInterval">DynamicElement.UpdateInterval</a>
+    </div>
+    <div>
+      <a class="xref" href="RueI.API.Elements.DynamicElement.html#RueI_API_Elements_DynamicElement_ContentGetter">DynamicElement.ContentGetter</a>
+    </div>
     <div>
       <a class="xref" href="RueI.API.Elements.Element.html#RueI_API_Elements_Element_VerticalPosition">Element.VerticalPosition</a>
     </div>
@@ -184,65 +185,33 @@ Class DynamicElement  <a class="header-action link-secondary" title="View source
 </h2>
 
 
-  <a id="RueI_API_Elements_DynamicElement__ctor_" data-uid="RueI.API.Elements.DynamicElement.#ctor*"></a>
+  <a id="RueI_API_Elements_CachedElement__ctor_" data-uid="RueI.API.Elements.CachedElement.#ctor*"></a>
 
-  <h3 id="RueI_API_Elements_DynamicElement__ctor_System_Single_System_Func_ReferenceHub_System_String__" data-uid="RueI.API.Elements.DynamicElement.#ctor(System.Single,System.Func{ReferenceHub,System.String})">
-  DynamicElement(float, Func&lt;ReferenceHub, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/DynamicElement.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <h3 id="RueI_API_Elements_CachedElement__ctor_System_Single_System_TimeSpan_System_Func_System_String__" data-uid="RueI.API.Elements.CachedElement.#ctor(System.Single,System.TimeSpan,System.Func{System.String})">
+  CachedElement(float, TimeSpan, Func&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/CachedElement.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="RueI.API.Elements.DynamicElement.html">DynamicElement</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="RueI.API.Elements.CachedElement.html">CachedElement</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DynamicElement(float position, Func&lt;ReferenceHub, string&gt; contentGetter)</code></pre>
+    <pre><code class="lang-csharp hljs">public CachedElement(float position, TimeSpan cacheTime, Func&lt;string&gt; contentGetter)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><param name="position">The vertical position of the <a class="xref" href="RueI.API.Elements.Element.html">Element</a>, from 0 to 1000.
+    <dd><param name="position">
+  <param name="position">The vertical position of the <a class="xref" href="RueI.API.Elements.Element.html">Element</a>, from 0 to 1000.
+
 </dd>
-    <dt><code>contentGetter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">ReferenceHub</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a> that takes in a ReferenceHub
-and returns a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> to use for the content.</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="RueI_API_Elements_DynamicElement__ctor_" data-uid="RueI.API.Elements.DynamicElement.#ctor*"></a>
-
-  <h3 id="RueI_API_Elements_DynamicElement__ctor_System_Single_System_Func_System_String__" data-uid="RueI.API.Elements.DynamicElement.#ctor(System.Single,System.Func{System.String})">
-  DynamicElement(float, Func&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/DynamicElement.cs/#L29"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="RueI.API.Elements.DynamicElement.html">DynamicElement</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DynamicElement(float position, Func&lt;string&gt; contentGetter)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd><param name="position">The vertical position of the <a class="xref" href="RueI.API.Elements.Element.html">Element</a>, from 0 to 1000.
+    <dt><code>cacheTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> indicating how long to store cached text before regenerating.</p>
 </dd>
     <dt><code>contentGetter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a> that returns a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> to use for the content.</p>
+    <dd><param name="contentGetter">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func&lt;TResult&gt;</a> that returns a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> to use for the content.
 </dd>
   </dl>
 
@@ -261,19 +230,19 @@ and returns a <a href="https://learn.microsoft.com/dotnet/csharp/language-refere
 </h2>
 
 
-  <a id="RueI_API_Elements_DynamicElement_ContentGetter_" data-uid="RueI.API.Elements.DynamicElement.ContentGetter*"></a>
+  <a id="RueI_API_Elements_CachedElement_CacheTime_" data-uid="RueI.API.Elements.CachedElement.CacheTime*"></a>
 
-  <h3 id="RueI_API_Elements_DynamicElement_ContentGetter" data-uid="RueI.API.Elements.DynamicElement.ContentGetter">
-  ContentGetter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/DynamicElement.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <h3 id="RueI_API_Elements_CachedElement_CacheTime" data-uid="RueI.API.Elements.CachedElement.CacheTime">
+  CacheTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/CachedElement.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func&lt;T, TResult&gt;</a> used to obtain data for this <a class="xref" href="RueI.API.Elements.DynamicElement.html">DynamicElement</a>.</p>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a> indicating how long data should be cached for before it is regenerated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Func&lt;ReferenceHub, string&gt; ContentGetter { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TimeSpan CacheTime { get; }</code></pre>
   </div>
 
 
@@ -282,41 +251,7 @@ and returns a <a href="https://learn.microsoft.com/dotnet/csharp/language-refere
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">ReferenceHub</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="RueI_API_Elements_DynamicElement_UpdateInterval_" data-uid="RueI.API.Elements.DynamicElement.UpdateInterval*"></a>
-
-  <h3 id="RueI_API_Elements_DynamicElement_UpdateInterval" data-uid="RueI.API.Elements.DynamicElement.UpdateInterval">
-  UpdateInterval
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/DynamicElement.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets or initializes an interval for how often a <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a> with this <a class="xref" href="RueI.API.Elements.DynamicElement.html">DynamicElement</a>
-should be automatically updated, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the <a class="xref" href="RueI.API.Elements.DynamicElement.html">DynamicElement</a> should not
-automatically update a <a class="xref" href="RueI.API.RueDisplay.html">RueDisplay</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimeSpan? UpdateInterval { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
     <dd></dd>
   </dl>
 
@@ -331,11 +266,11 @@ automatically update a <a class="xref" href="RueI.API.RueDisplay.html">RueDispla
 </h2>
 
 
-  <a id="RueI_API_Elements_DynamicElement_GetParsedData_" data-uid="RueI.API.Elements.DynamicElement.GetParsedData*"></a>
+  <a id="RueI_API_Elements_CachedElement_GetParsedData_" data-uid="RueI.API.Elements.CachedElement.GetParsedData*"></a>
 
-  <h3 id="RueI_API_Elements_DynamicElement_GetParsedData_ReferenceHub_" data-uid="RueI.API.Elements.DynamicElement.GetParsedData(ReferenceHub)">
+  <h3 id="RueI_API_Elements_CachedElement_GetParsedData_ReferenceHub_" data-uid="RueI.API.Elements.CachedElement.GetParsedData(ReferenceHub)">
   GetParsedData(ReferenceHub)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/DynamicElement.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/CachedElement.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="RueI.API.Parsing.ParsedData.html">ParsedData</a> for this element.</p>
@@ -366,7 +301,7 @@ automatically update a <a class="xref" href="RueI.API.RueDisplay.html">RueDispla
 
 
 
-  <h4 class="section" id="RueI_API_Elements_DynamicElement_GetParsedData_ReferenceHub__remarks">Remarks</h4>
+  <h4 class="section" id="RueI_API_Elements_CachedElement_GetParsedData_ReferenceHub__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The <a class="xref" href="RueI.API.Elements.Element.html#RueI_API_Elements_Element_GetParsedData_ReferenceHub_">GetParsedData(ReferenceHub)</a> method is called when a Display
 is updated and RueI combines every <a class="xref" href="RueI.API.Elements.Element.html">Element</a> that belongs to it.
 Implementations for this method need not call <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Parse(string, Element)</a> every
@@ -380,7 +315,7 @@ time this method is called; instead, the <a class="xref" href="RueI.API.Parsing.
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/DynamicElement.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/pawslee/RueI/blob/master/RueI/API/Elements/CachedElement.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 
