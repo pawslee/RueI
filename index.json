@@ -143,10 +143,5 @@
     "href": "index.html",
     "title": "Introduction | RueI",
     "summary": "Introduction RueI is a hint framework for scp:sl. the primary component of RueI is the ability to display multiple hints at once, but it also provides a lot of other features to make working with hints easier and more effective. while RueI is a LabAPI plugin, it primarily acts as a dependency, and other plugin frameworks can use it, too."
-  },
-  "markdown/introduction.html": {
-    "href": "markdown/introduction.html",
-    "title": "Introduction | RueI",
-    "summary": "Introduction welcome to RueI! right now, there aren't any markdown docs. eventually, they'll be added, along with more examples. :)"
   }
 }

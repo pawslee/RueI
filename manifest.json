@@ -422,16 +422,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "markdown/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "markdown/introduction.html"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "markdown/toc.yml",
       "output": {
