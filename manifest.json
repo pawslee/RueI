@@ -410,6 +410,16 @@
         }
       },
       "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "markdown/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "markdown/introduction.html"
+        }
+      },
+      "version": ""
     }
   ],
   "groups": [
