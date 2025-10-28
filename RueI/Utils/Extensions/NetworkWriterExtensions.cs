@@ -12,10 +12,12 @@ using Mirror;
 using mscorlib::System.Buffers.Text;
 using RueI.API.Parsing.Structs;
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
 /// <summary>
 /// Provides extensions for the <see cref="NetworkWriter"/> class to write <see cref="ReadOnlySpan{T}"/>s.
 /// </summary>
 internal static class NetworkWriterExtensions
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
 {
     private static readonly UTF8Encoding Encoding = new(false, true);
 
@@ -40,6 +42,7 @@ internal static class NetworkWriterExtensions
         writer.Position += bytes;
     }
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Writes a string using a <see langword="char"/> <see cref="ReadOnlySpan{T}"/>.
     /// </summary>
@@ -48,6 +51,7 @@ internal static class NetworkWriterExtensions
     /// <exception cref="IndexOutOfRangeException">Thrown when <paramref name="span"/> is larger
     /// than or equal to <see cref="ushort.MaxValue"/>.</exception>
     internal static void WriteCharsAndLength(this NetworkWriter writer, ReadOnlySpan<char> span)
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
     {
         const int USHORT_SIZE = sizeof(ushort);
 
@@ -66,6 +70,7 @@ internal static class NetworkWriterExtensions
         writer.Position += count;
     }
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Writes a string using a <see langword="char"/> <see cref="ReadOnlySpan{T}"/>.
     /// </summary>
@@ -74,6 +79,7 @@ internal static class NetworkWriterExtensions
     /// <exception cref="IndexOutOfRangeException">Thrown when <paramref name="span"/> is larger
     /// than or equal to <see cref="ushort.MaxValue"/>.</exception>
     internal static void WriteChars(this NetworkWriter writer, ReadOnlySpan<char> span)
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
     {
         const int USHORT_SIZE = sizeof(ushort);
 
@@ -169,6 +175,7 @@ internal static class NetworkWriterExtensions
     /// <param name="ch">The <see langword="char"/> to write.</param>
     internal static void WriteUtf8Char(this NetworkWriter writer, char ch) => writer.WriteByte((byte)ch);
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Writes a <see langword="byte"/> <see cref="ReadOnlySpan{T}"/> without writing its size.
     /// </summary>
@@ -176,6 +183,7 @@ internal static class NetworkWriterExtensions
     /// <param name="bytes">The <see cref="ReadOnlySpan{T}"/> to write.</param>
     /// <param name="writeSize">Whether or not to write the size.</param>
     internal static void WriteBytes(this NetworkWriter writer, ReadOnlySpan<byte> bytes, bool writeSize)
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
     {
         if (writeSize)
         {
@@ -201,15 +209,19 @@ internal static class NetworkWriterExtensions
     /// <param name="writeSize">Whether to write the size, as a <see langword="ushort"/>.</param>
     internal static void WriteNetworkWriter(this NetworkWriter writer, NetworkWriter otherWriter, bool writeSize) => writer.WriteBytes(otherWriter.ContentSpan(), writeSize);
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Gets the writable portion of a <see cref="NetworkWriter"/> as a <see cref="Span{T}"/>.
     /// </summary>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
     private static Span<byte> BufferSpan(this NetworkWriter writer, int offset = 0) => writer.buffer.AsSpan(writer.Position + offset);
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Gets the writable portion of a <see cref="NetworkWriter"/> as a <see cref="Span{T}"/>.
     /// </summary>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
     private static Span<byte> ContentSpan(this NetworkWriter writer) => writer.buffer.AsSpan(0, writer.Position);
 }

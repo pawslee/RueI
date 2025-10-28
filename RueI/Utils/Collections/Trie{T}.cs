@@ -45,10 +45,12 @@ internal sealed class Trie<T>
         return new RadixNode(default, groups);
     }
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Provides a <see cref="ReadOnlySpan{T}"/> for a <see langword="string"/> that is not a <see langword="ref struct"/>.
     /// </summary>
     internal readonly struct StringSlice
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
     {
         private readonly int start;
         private readonly string str;
@@ -81,11 +83,13 @@ internal sealed class Trie<T>
         /// <returns>The <see cref="char"/> at the index.</returns>
         public readonly char this[int index] => this.str[this.start + index];
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
         /// <summary>
         /// Converts a <see cref="StringSlice"/> to a <see cref="ReadOnlySpan{T}"/>.
         /// </summary>
         /// <returns>A <see cref="ReadOnlySpan{T}"/>.</returns>
         public ReadOnlySpan<char> ToSpan() => this.str.AsSpan(this.start);
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
 
         /// <summary>
         /// Gets a <see cref="StringSlice"/> that starts one <see cref="char"/> later than this <see cref="StringSlice"/>.

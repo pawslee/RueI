@@ -4,6 +4,7 @@
 		<LangVersion>11</LangVersion>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<Platforms>AnyCPU;x64</Platforms>
 	</PropertyGroup>
 	<!--package information-->
 	<PropertyGroup>
@@ -29,12 +30,18 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+	  <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Lib.Harmony" Version="2.2.2" />
-		<PackageReference Include="Northwood.LabAPI" Version="1.1.1" />
+		<PackageReference Include="Lib.Harmony" Version="2.4.1" />
+		<PackageReference Include="Northwood.LabAPI" Version="1.1.4" />
 		<PackageReference Include="StyleCop.Analyzers.Unstable" Version="1.2.0.556">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -60,4 +67,7 @@
 			<PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;C:\Users\Forest\AppData\Roaming\SCP Secret Laboratory\LabAPI\Plugins\global\$(ProjectName).dll&quot;" />
+	</Target>
 </Project>

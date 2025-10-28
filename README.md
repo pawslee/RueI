@@ -6,8 +6,11 @@ if you want to develop using RueI, make sure you install the [nuget package](htt
 RueI also has a [website with documentation](https://pawslee.github.io/RueI/).
 
 ### Installation
-RueI is a LabAPI plugin, although it works with EXILED plugins, too. simply download the [latest release](https://github.com/pawslee/RueI/releases/latest), then
-put it in your plugin folder. RueI also requires Harmony 2.2.2 and above: you can download that [here](https://github.com/pardeike/Harmony/releases).
+RueI is a LabAPI plugin, although it works with EXILED.
+1. simply download the [latest RueI 14.2 Build](https://github.com/rockysx27/RueI/releases/tag/14.2-EXILED), put the dll in the `%appdata%\SCP Secret Laboratory\LabAPI\plugins\global` folder.
+2. RueI 14.2 also requires Harmony 2.4.1. You have to Options:
+    1. If you run EXILED 9.10.0 (like me) then you want to cut&paste the harmony dependancy file from `%appdata%\EXILED\plugins\dependencies\0Harmony.dll` to `%appdata%\SCP Secret Laboratory\LabAPI\dependencies\global` to avoid loading more than 1 harmony dll.
+    2. If you don't run EXILED then you need to download harmony dependancy [Harmony 2.4.1 Release](https://github.com/pardeike/Harmony/releases/tag/v2.4.1.0) and put the dll in the `%appdata%\SCP Secret Laboratory\LabAPI\dependencies\global` directory.
 
 
 ### Example

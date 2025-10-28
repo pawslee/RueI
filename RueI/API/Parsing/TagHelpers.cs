@@ -30,6 +30,7 @@ internal static class TagHelpers
     /// <returns><see langword="true"/> if the <paramref name="ch"/> represents a digit; otherwise, <see langword="false"/>.</returns>
     internal static bool IsDigitFast(char ch) => ch >= '0' && ch <= '9';
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Parses a <see langword="float"/> from a <see cref="ReadOnlySpan{T}"/> containing
     /// an integer part and a <see cref="ReadOnlySpan{T}"/> containing the decimal part.
@@ -38,6 +39,7 @@ internal static class TagHelpers
     /// <param name="decimalPart">A <see cref="ReadOnlySpan{T}"/> of the decimal part.</param>
     /// <returns>The parsed <see langword="float"/>.</returns>
     internal static float FromIntegerAndDecimal(ReadOnlySpan<char> integerPart, ReadOnlySpan<char> decimalPart)
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
     {
         const System.Globalization.NumberStyles Style = System.Globalization.NumberStyles.None;
         float value = 0;

@@ -91,12 +91,14 @@ internal sealed class ParameterHandler
     /// <returns>The mapped parameter.</returns>
     internal int MappedElementParameterId(int paramId) => this.elementIndex + paramId;
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Adds a simple <see langword="string"/> parameter to the <see cref="ParameterHandler"/>.
     /// </summary>
     /// <param name="bytes">A <see cref="ReadOnlySpan{T}"/> of <see langword="byte"/> that contains the content of the string parameter.</param>
     /// <returns>The ID of the added parameter.</returns>
     internal int AddStringParameter(ReadOnlySpan<byte> bytes)
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
     {
         this.writer.WriteByte((byte)HintParameterReaderWriter.HintParameterType.Text);
         this.writer.WriteBytes(bytes, writeSize: true);

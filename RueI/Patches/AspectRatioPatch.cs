@@ -7,7 +7,8 @@ using RueI.API;
 /// Patches <see cref="AspectRatioSync.UserCode_CmdSetAspectRatio__Single(float)"/>
 /// to update <see cref="RueDisplay"/>s when the aspect ratio is updated.
 /// </summary>
-[HarmonyPatch(typeof(AspectRatioSync), nameof(AspectRatioSync.UserCode_CmdSetAspectRatio__Single))]
+[HarmonyPatch(typeof(AspectRatioSync), "UserCode_CmdSetAspectRatio__Single")]
+
 internal static class AspectRatioPatch
 {
 #pragma warning disable SA1313 // Parameter names should begin with lower-case letter

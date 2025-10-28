@@ -120,12 +120,14 @@ internal sealed class RefList<T>
     /// <returns>A shallow-copy of the <see cref="RefList{T}"/>.</returns>
     public RefList<T> Clone() => new(this);
 
+#pragma warning disable CS0419 // Ambiguous reference in cref attribute
     /// <summary>
     /// Gets the values of the <see cref="RefList{T}"/> as a <see cref="Span{T}"/>.
     /// </summary>
     /// <param name="start">The position to start at.</param>
     /// <returns>A <see cref="Span{T}"/> that encompasses all values from <paramref name="start"/> to <see cref="Count"/>.</returns>
     public Span<T> AsSpan(int start) => this.values.AsSpan(start, this.Count - start);
+#pragma warning restore CS0419 // Ambiguous reference in cref attribute
 
     private void GrowTo(int capacity)
     {
