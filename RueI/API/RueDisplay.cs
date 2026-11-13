@@ -33,6 +33,7 @@ public sealed class RueDisplay
     private readonly HashSet<RueDisplay> spectators = new();
     private readonly ReferenceHub hub;
 
+    private RueDisplay? spectatedDisplay;
     private bool updateNextFrame = false;
 
     // forcedUpdate represents either an automatic update by a DynamicElement, etc.
@@ -230,20 +231,29 @@ public sealed class RueDisplay
     }
 
     // not a lambda so we can later unregister
-    private static void RemoveHub(ReferenceHub hub) => Displays.Remove(hub);
+    private static void RemoveHub(ReferenceHub hub)
+    {
+        if (Displays.TryGetValue(hub, out RueDisplay display))
+        {
+            display.StopSpectating();
+            display.ClearSpectators();
+            Displays.Remove(hub);
+        }
+    }
 
     private static void OnRoleChanged(PlayerChangedRoleEventArgs ev)
     {
+        if (!Displays.TryGetValue(ev.Player.ReferenceHub, out RueDisplay display))
+        {
+            return;
+        }
+
+        // Changing role can reset the spectated target without a ChangedSpectator event.
+        display.StopSpectating();
+
         if (ev.NewRole is not ISpectatableRole)
         {
-            RueDisplay display = RueDisplay.Get(ev.Player);
-
-            foreach (RueDisplay spectator in display.spectators)
-            {
-                spectator.updateNextFrame = true;
-            }
-
-            display.spectators.Clear();
+            display.ClearSpectators();
         }
     }
 
@@ -251,17 +261,37 @@ public sealed class RueDisplay
     {
         RueDisplay display = Get(ev.Player);
 
-        if (ev.OldTarget != null)
-        {
-            Get(ev.OldTarget).spectators.Remove(display);
-        }
+        display.StopSpectating();
 
         if (ev.NewTarget != null)
         {
-            Get(ev.NewTarget).spectators.Add(display);
+            RueDisplay target = Get(ev.NewTarget);
+            display.spectatedDisplay = target;
+            target.spectators.Add(display);
         }
 
         display.Update();
+    }
+
+    private void StopSpectating()
+    {
+        if (this.spectatedDisplay is RueDisplay target)
+        {
+            target.spectators.Remove(this);
+            this.spectatedDisplay = null;
+            this.Update();
+        }
+    }
+
+    private void ClearSpectators()
+    {
+        foreach (RueDisplay spectator in this.spectators)
+        {
+            spectator.spectatedDisplay = null;
+            spectator.Update();
+        }
+
+        this.spectators.Clear();
     }
 
     private static void CheckDisplays()
